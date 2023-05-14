@@ -129,6 +129,27 @@ function get_rank(player_name) {
     return "None";
 }
 
+// flag emojis 
+function getflag(langcode) {
+	var first = langcode.charCodeAt(0) + 127397;
+	var second = langcode.charCodeAt(1) + 127397;
+	var flag=`&#${first};&#${second};`;
+	return flag;
+}
+
+// a string containing all flags of a player
+function player_flags(player_name) {
+    const profile = profiles[player_name];
+    if (profile == null) { return ""; }
+    const countries = profile["country"];;
+    if (countries == null) { return ""; }
+    var flags = "";
+    for (const ctr of countries) {
+        console.log(ctr);
+        flags += getflag(ctr) + " ";
+    }
+    return flags;
+}
 
 
 // Produces html link to bracket
@@ -158,6 +179,7 @@ function draw_list() {
         let li = document.createElement("li");
         li.innerHTML = (i+1).toString();
         li.innerHTML += ") ";
+        li.innerHTML += player_flags(entry[0].toString());
         li.innerHTML += player_link(entry[0].toString());
         li.innerHTML += " - ";
         li.innerHTML += entry[1].toString();
@@ -169,7 +191,7 @@ function draw_list() {
 // drawing the player card on 3rdplayer.html
 function draw_player(player_name) {
     const p_name = document.getElementById("p_name");
-    p_name.innerHTML = player_name;
+    p_name.innerHTML = player_flags(player_name) + player_name;
     const score = all_scores(player_name);
     // drawing the achievement list
     if (score.length > 0) {
@@ -211,6 +233,11 @@ function draw_player(player_name) {
     // drawng total ranking
     p_ranking = document.getElementById("p_ranking");
     p_ranking.innerHTML = "Total Ranking: #" + get_rank(player_name);
+    // drawing the quote
+    const quote = profiles[player_name]["quote"];
+    if (quote != null) {
+        document.getElementById("quote").innerHTML = "\"" + quote + "\"";
+    }
 }
 
 // drawing depending on the url argument
