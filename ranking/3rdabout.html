@@ -30,6 +30,111 @@
 
    <div id="card">
    
+      <h1>Ranking Formula</h1>
+
+      <p>
+         Our ranking is not an indication of player skill.
+         Our formula tries to compensate for the fact that some players have competed in very few tournaments.
+      </p>
+
+      <p>
+         Events are classified in two categories: major and minor tournaments.
+         Points for a result in a tournament are given in the table below:
+         <table class="center">
+            <tbody>
+               <tr>
+                  <td>Rank</td>
+                  <td>1st</td>
+                  <td>2nd</td>
+                  <td>3rd</td>
+                  <td>4th</td>
+                  <td>5th</td>
+                  <td>7th</td>
+                  <td>9th</td>
+                  <td>13th</td>
+                  <td>17th</td>
+                  <td>25th</td>
+               </tr>
+               <tr>
+                  <td>Major</td>
+                  <td>162</td>
+                  <td>151</td>
+                  <td>142</td>
+                  <td>134</td>
+                  <td>120</td>
+                  <td>108</td>
+                  <td>88</td>
+                  <td>72</td>
+                  <td>48</td>
+                  <td>32</td>
+               </tr>
+               <tr>
+                  <td>Minor</td>
+                  <td>123</td>
+                  <td>113</td>
+                  <td>105</td>
+                  <td>98</td>
+                  <td>86</td>
+                  <td>76</td>
+                  <td>60</td>
+                  <td>48</td>
+                  <td>32</td>
+                  <td>0</td>
+               </tr>
+            </tbody>
+         </table>
+      </p>
+
+      <p>
+         These points then get muliplied by a factor that depends on how old the tournament is.
+         An old tournament only counts for 2 thirds of a recent one.
+         <table class="center">
+            <tbody>
+               <tr>
+                  <td>Age</td>
+                  <td>This year</td>
+                  <td>1 year ago</td>
+                  <td>2 years ago</td>
+                  <td>3 years ago</td>
+                  <td>4 years ago</td>
+                  <td>Older</td>
+               </tr> 
+               <tr>
+                  <td>Factor</td>
+                  <td>15</td>
+                  <td>14</td>
+                  <td>13</td>
+                  <td>12</td>
+                  <td>11</td>
+                  <td>10</td>
+               </tr>
+            </tbody>
+         </table>
+      </p>
+
+      <p>
+         Finally, we establish a player's total score by using only their three best scores.
+         Each score gets muliplied by a final factor, to compensate for players having fewer results.
+         
+         <table class="center">
+            <tbody>
+               <tr>
+                  <td>Best Result</td>
+                  <td>2nd Best</td>
+                  <td>3rd Best</td>
+               </tr> 
+               <tr>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>2</td>
+               </tr>
+            </tbody>
+         </table>
+
+      </p>
+      
+
+
       <h1>Events</h1>
 
       <p> In this ranking, we consider tournaments that satisfy the following conditions:</p>
@@ -51,7 +156,7 @@
       <table class="center">
          <tbody>
             <tr>
-               <td>QuickStand</td>
+               <td><a href="../index.html">QuickStand</a></td>
                <td>Rennes</td>
                <td>Organizes events in different cities.</td>
             </tr>
