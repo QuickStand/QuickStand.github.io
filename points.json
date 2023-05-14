@@ -27,10 +27,12 @@ const minor_points = {
 
 // how much to multiply a score with depending on how many years have passed since the result
 const year_multiplicator = {
-    "0":"6",
-    "1":"5",
-    "2":"4",
-    "other":"3"
+    "0":"15",
+    "1":"14",
+    "2":"13",
+    "3":"12",
+    "4":"11",
+    "other":"10"
 }
 
 // for now, we only take into account the 3 best results of each player
