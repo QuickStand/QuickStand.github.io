@@ -1,0 +1,38 @@
+const hfsreborn = {
+    "name":"Hado HFS Reborn",
+    "shortname":"HFSreborn",
+    "bracket":"https://challonge.com/4n3rfwft",
+    "vod":"https://www.youtube.com/watch?v=vmcTzG0lFPQ",
+    "org":["HFS"],
+    "org_link":["https://www.hfsplay.fr/"],
+    "type":"minor",
+    "year":"2021",
+    "month":"September",
+    "results":
+    {
+        "YaZ":"1",
+        "Mymoza":"2",
+        "Niabanh":"3",
+        "Victor":"4",
+        "Aurèle":"5",
+        "Jehan":"5",
+        "DonYann":"7",
+        "R":"7",
+        "Lithlad":"9",
+        "PtitLee":"9",
+        "Warner":"9",
+        "Zyul":"9",
+        "Arno1":"13",
+        "Keikun":"13",
+        "Keizaal":"13",
+        "Tobitake":"13",
+        "Cheveuxlongs":"17",
+        "Rex":"17",
+        "Heavy":"17",
+        "Fredo":"17",
+        "Isimorn":"17",
+        "Kakakokeokuku":"17",
+        "Pyrotek":"17",
+        "TMac14":"17"
+    }
+};

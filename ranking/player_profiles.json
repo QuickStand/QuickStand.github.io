@@ -342,5 +342,32 @@ const profiles = {
     "ChefBravo":{
         "country":["FR"],
     },
+    "Warner":{
+        "country":["FR"],
+    },
+    "Keikun":{
+        "country":["FR"],
+    },
+    "Cheveuxlongs":{
+        "country":["FR"],
+    },
+    "Rex":{
+        "country":["FR"],
+    },
+    "Heavy":{
+        "country":["FR"],
+    },
+    "Fredo":{
+        "country":["FR"],
+    },
+    "Kakakokeokuku":{
+        "country":["FR"],
+    },
+    "Pyrotek":{
+        "country":["FR"],
+    },
+    "TMac14":{
+        "country":["FR"],
+    },
     
 }
