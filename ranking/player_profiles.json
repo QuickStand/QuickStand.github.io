@@ -140,6 +140,7 @@ const profiles = {
     },
     "Sikaryu":{
         "country":["FR"],
+        "quote":"Je parle avec mes points 😁👍🏾",
     },
     "Jason":{
         "country":["FR"],
