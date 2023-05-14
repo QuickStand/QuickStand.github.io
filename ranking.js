@@ -129,10 +129,24 @@ function get_rank(player_name) {
     return "None";
 }
 
+
+
+// Produces html link to bracket
+function html_link(url,name) {
+    if (url == null || url == "") { return name; } // broken links
+    return "<a href='" + url + "'>" + name + "</a>";
+}
+
 // linking to the personal page of each player
 function player_link(player_name) {
-    return "<a href='3rdplayer.html?p=" + player_name + "'>" + player_name + "</a>";
+    return html_link("3rdplayer.html?p="+player_name, player_name);
 }
+
+// linking to each tournament page
+function tournament_link(tournament) {
+    return html_link("3rdtournament.html?t="+tournament["shortname"], tournament["name"]);
+}
+
 
 // drawing the full ranking list
 function draw_list() {
@@ -169,8 +183,8 @@ function draw_player(player_name) {
                 const r_score = result[0];
                 const r_rank = r_tournament["results"][player_name];
                 let li = document.createElement("li");
-                li.innerText = "#" + r_rank.toString() + " - ";
-                li.innerText += r_tournament["name"] + " - " + r_score.toString() + "pts"; 
+                li.innerHTML = "#" + r_rank.toString() + " - ";
+                li.innerHTML += tournament_link(r_tournament) + " - " + r_score.toString() + "pts"; 
                 p_achievements.appendChild(li);
             }
         }
@@ -186,8 +200,8 @@ function draw_player(player_name) {
             const r_score = result[0];
             const r_rank = r_tournament["results"][player_name];
             let li = document.createElement("li");
-            li.innerText = "#" + r_rank.toString() + " - ";
-            li.innerText += r_tournament["name"] + " - " + r_score.toString() + "pts"; 
+            li.innerHTML = "#" + r_rank.toString() + " - ";
+            li.innerHTML += tournament_link(r_tournament) + " - " + r_score.toString() + "pts"; 
             p_others.appendChild(li);
         }
     }
@@ -206,6 +220,58 @@ function draw_player_url () {
     const player_name = urlParams.get("p");
     if (player_name != null) {
         draw_player(player_name);
+    }
+    return 0;
+}
+
+
+// printing the tournament type
+function type_to_string(type) {
+    if (type == "major") { return "Major Tournament"; }
+    else if (type == "minor") { return "Minor Tournament"; }
+    return "";
+}
+
+// prints the HTML links for a list of organizers
+function print_orgs (orgs, orgs_links) {
+    var links = "";
+    for (var i=0; i<orgs.length; i++) {
+        links += html_link(orgs_links[i],orgs[i]) + " ";
+    }
+    return links;
+}
+
+
+// drawing the tournament page
+function draw_tournament(tournament) {
+    document.getElementById("name").innerHTML = tournament["name"];
+    document.getElementById("type").innerHTML = type_to_string(tournament["type"]);
+    document.getElementById("date").innerHTML = tournament["month"] + " " + tournament["year"];
+    document.getElementById("org").innerHTML = print_orgs(tournament["org"],tournament["org_link"]);
+    document.getElementById("bracket").innerHTML = html_link(tournament["bracket"],"Bracket");
+    if (tournament["vod"] != null) {document.getElementById("vod").innerHTML = html_link(tournament["vod"],"VOD");}
+    if (tournament["note"] != null) {document.getElementById("note").innerHTML = tournament["note"];}
+    const results = document.getElementById("results");
+    
+    // print the result list
+    for (const player_name in tournament["results"]) {
+        let li = document.createElement("li");
+        li.innerHTML = "#" + tournament["results"][player_name] + " - " + player_link(player_name);
+        results.appendChild(li);
+    }
+}
+
+// drawing tournament depending on the url argument
+function tournament_url () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const param = urlParams.get("t");
+    if (param != null) {
+        for (const t of tournaments) {
+            if (param == t["shortname"]) {
+                draw_tournament(t);
+            }
+        }
     }
     return 0;
 }
