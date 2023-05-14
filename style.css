@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+/* Font for flag emojis */
+@font-face {
+    font-family: NotoColorEmojiLimited;
+    unicode-range: U+1F1E6-1F1FF;
+    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+  }
+
 /* Main body and Titles */
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'NotoColorEmojiLimited', 'Open Sans', sans-serif;
 	line-height: 2em;
 	font-size: 20px;
 	background-color: #000000;
