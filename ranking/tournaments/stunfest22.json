@@ -3,7 +3,7 @@ const stunfest22 = {
     "shortname":"stunfest22",
     "bracket":"https://challonge.com/lr52pxc3/standings",
     "org":["3HitCombo","QuickStand"],
-    "org_link":["http://www.3hitcombo.fr/",""],
+    "org_link":["http://www.3hitcombo.fr/","../index.html"],
     "type":"minor",
     "year":"2022",
     "month":"May",

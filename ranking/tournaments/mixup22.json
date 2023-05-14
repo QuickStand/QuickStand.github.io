@@ -4,7 +4,7 @@ const mixup22 = {
     "bracket":"https://www.start.gg/tournament/the-mixup-2022-round-4/event/street-fighter-iii-3rd-strike-1",
     "vod":"https://www.youtube.com/watch?v=GMoskYj1y-4",
     "org":["LaDose.NET","QuickStand"],
-    "org_link":["https://www.ladose.net/",""],
+    "org_link":["https://www.ladose.net/","../index.html"],
     "type":"major",
     "year":"2022",
     "month":"October",

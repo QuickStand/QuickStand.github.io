@@ -3,7 +3,7 @@ const pbn3 = {
     "shortname":"pbn3",
     "bracket":"https://www.start.gg/tournament/parry-by-night-3",
     "org":["QuickStand"],
-    "org_link":[""],
+    "org_link":["../index.html"],
     "type":"major",
     "year":"2021",
     "month":"November",

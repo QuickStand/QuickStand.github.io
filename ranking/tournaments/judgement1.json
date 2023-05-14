@@ -3,7 +3,7 @@ const judgement1 = {
     "shortname":"judgement1",
     "bracket":"https://www.start.gg/tournament/insalan-xv/event/judgement-solo",
     "org":["QuickStand"],
-    "org_link":[""],
+    "org_link":["../index.html"],
     "vod":"https://www.youtube.com/watch?v=_9roS-0III4",
     "type":"minor",
     "year":"2020",

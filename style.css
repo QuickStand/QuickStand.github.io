@@ -90,3 +90,22 @@ tr:hover a[href] {
 td a[href]{
     text-decoration: none;
 }
+
+/* Navigation Header */
+nav {
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    background: #000000;
+    padding: 20px 20px 20px 20px;
+    text-align:center;
+}
+
+nav a[href] {
+    font-size: 32px;
+	line-height: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}

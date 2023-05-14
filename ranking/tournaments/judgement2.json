@@ -3,7 +3,7 @@ const judgement2 = {
     "shortname":"judgement2",
     "bracket":"https://www.start.gg/tournament/insalan-xvi/event/judgement-solo/",
     "org":["QuickStand"],
-    "org_link":[""],
+    "org_link":["../index.html"],
     "type":"minor",
     "year":"2022",
     "month":"March",

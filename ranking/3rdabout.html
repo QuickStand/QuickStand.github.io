@@ -2,7 +2,7 @@
 <html>
    <head>
      <meta charset="UTF-8">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="../style.css">
      <script type="text/javascript" src="tournaments/hfs23.json"></script> 
      <script type="text/javascript" src="tournaments/hfs22.json"></script> 
      <script type="text/javascript" src="tournaments/mixup22.json"></script> 
@@ -19,6 +19,15 @@
    </head>
    <body onload="draw_tournaments();">
 
+      <nav id="header">
+         <p><a href="../index.html"><img 
+           src="../quickstand_logo.svg" 
+           alt="QuickStand"
+           width="400px" /></a></p>
+           <h2 class="left"><a href="3rdrankings.html">Ranking</a></h2>
+           <h2 class="right"><a href="3rdabout.html">About</a></h2>        
+       </nav>
+
    <div id="card">
    
       <h1>Events</h1>
@@ -30,9 +39,10 @@
          <li>With results available online (challonge, start.gg)</li>
          <li>Open to all (not invitation-based)</li>
          <li>On arcade hardware (cabs or superguns)</li>
+         <li>No Team tournaments</li>
       </ul>
 
-      Using these conditions, we have considered the following events:
+      Using these conditions, we gathered results from the following events:
       <ul id="event_list"></ul>
       If we have missed any such event, let us know.
       

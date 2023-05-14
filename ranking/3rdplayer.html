@@ -2,7 +2,7 @@
 <html>
    <head>
      <meta charset="UTF-8">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="../style.css">
      <script type="text/javascript" src="tournaments/hfs23.json"></script> 
      <script type="text/javascript" src="tournaments/hfs22.json"></script> 
      <script type="text/javascript" src="tournaments/mixup22.json"></script> 
@@ -17,31 +17,30 @@
      <script type="text/javascript" src="player_profiles.json"></script>
     <script type="text/javascript" src="ranking.js"></script>
    </head>
-   <body onload="tournament_url();">
+   <body onload="draw_player_url();">
 
-   <div id="card">
-   
-      <h1 id="name"></h1>
+    <div id="card">
+        <h1 id="p_name"></h1>
 
-      <p>
-         <h2 id="type" class="left"></h2>
-         <h2 id="date" class="right"></h2>
-     </p>
+        <p><span id="quote"></span></p>
 
-     <p>
-         <h2 id="bracket" class="left"></h2>
-         <h2 id="vod" class="right"></h2>
-     </p>
+        <p>
+            <h2 id="p_ranking" class="left"></h2>
+            <h2 id="p_total" class="right"></h2>
+        </p>
 
-      <p><b id="t_org"></b><span id="org"></span></p>
+        <h2 id="t_achievements"></h2>
+        <table class="center">
+            <tbody id="p_achievements">
+            </tbody>
+        </table>
 
-      <p><span id="note"></span></p>
+        <h2 id="t_others"></h2>
+        <table class="center">
+            <tbody id="p_others">
+            </tbody>
+        </table>
 
-      <table class="center">
-         <tbody id="results">
-         </tbody>
-      </table>
-   </div>  
-
+    </div>
    </body>
 </html>
