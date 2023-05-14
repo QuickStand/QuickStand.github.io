@@ -150,7 +150,10 @@
       </ul>
 
       Using these conditions, we gathered results from the following events:
-      <ul id="event_list"></ul>
+      <table class="center">
+         <tbody id="event_list">
+         </tbody>
+       </table>
       If we have missed any such event, let us know.
       
       <h1>French 3rd Strike Tournament Organizers</h1>
@@ -210,9 +213,14 @@
 function draw_tournaments() {
     const event_list = document.getElementById("event_list");
     for (const event of tournaments) {
-        let li = document.createElement("li");
-        li.innerHTML = tournament_link(event);
-        event_list.appendChild(li);
+        let tr = document.createElement("tr");
+        let td_date = document.createElement("td");
+        td_date.innerHTML = event["month"] + " " + event["year"];
+        tr.appendChild(td_date);
+        let td_link = document.createElement("td");
+        td_link.innerHTML = tournament_link(event);
+        tr.appendChild(td_link);
+        event_list.appendChild(tr);
     }
     return 0;
 }
