@@ -16,6 +16,12 @@ const profiles = {
     "Hayao": {
         "country":["JP"]
     },
+    "Sho": {
+        "country":["JP"]
+    },
+    "RX": {
+        "country":["JP"]
+    },
     "ChiRithy": {
         "country":["CA"]
     },
@@ -61,6 +67,9 @@ const profiles = {
     "ShinGeorge":{
         "country":["GB"],
     },
+    "Scotty2salty":{
+        "country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
     },
@@ -68,6 +77,9 @@ const profiles = {
         "country":["US"],
     },
     "Exa":{
+        "country":["BE"],
+    },
+    "Kenpachi":{
         "country":["BE"],
     },
     "Bossomat":{
@@ -322,6 +334,12 @@ const profiles = {
         "country":["FR"],
     },
     "kupokupokupo":{
+        "country":["FR"],
+    },
+    "BearArmy":{
+        "country":["FR"],
+    },
+    "ChefBravo":{
         "country":["FR"],
     },
     
