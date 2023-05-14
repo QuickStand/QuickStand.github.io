@@ -19,24 +19,29 @@
    </head>
    <body onload="tournament_url();">
 
-    <h1 id="name"></h1>
+   <div id="card">
+   
+      <h1 id="name"></h1>
 
-    <p><span id="type"></span></p>
+      <p>
+         <h2 id="type" class="left"></h2>
+         <h2 id="date" class="right"></h2>
+     </p>
 
-    <p><span id="date"></span></p>
+     <p>
+         <h2 id="bracket" class="left"></h2>
+         <h2 id="vod" class="right"></h2>
+     </p>
 
-    <p><span id="org"></span></p>
+      <p><b id="t_org"></b><span id="org"></span></p>
 
-    <p><span id="bracket"></span></p>
+      <p><span id="note"></span></p>
 
-    <p><span id="vod"></span></p>
+      <table class="center">
+         <tbody id="results">
+         </tbody>
+      </table>
+   </div>  
 
-    <p><span id="note"></span></p>
-
-    <table class="center">
-      <tbody id="results">
-      </tbody>
-   </table>
-     
    </body>
 </html>

@@ -187,6 +187,7 @@ function draw_list() {
     for (var i=0; i<rankings.length; i++) {
         const entry = rankings[i];
         let tr = document.createElement("tr");
+        tr.setAttribute("id",(i+1).toString())
         let td_rank = document.createElement("td");
         td_rank.innerHTML =  (i+1).toString();
         tr.appendChild(td_rank);
@@ -259,10 +260,11 @@ function draw_player(player_name) {
     }
     // drawing total score
     p_total = document.getElementById("p_total");
-    p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + "pts";
+    p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + " pts";
     // drawng total ranking
     p_ranking = document.getElementById("p_ranking");
-    p_ranking.innerHTML = "Total Ranking: #" + html_link("3rdrankings.html",get_rank(player_name));
+    const rank = get_rank(player_name);
+    p_ranking.innerHTML = "Total Ranking: #" + html_link("3rdrankings.html#"+rank,rank);
     // drawing the quote
     const quote = profiles[player_name]["quote"];
     if (quote != null) {
@@ -304,7 +306,10 @@ function draw_tournament(tournament) {
     document.getElementById("name").innerHTML = tournament["name"];
     document.getElementById("type").innerHTML = type_to_string(tournament["type"]);
     document.getElementById("date").innerHTML = tournament["month"] + " " + tournament["year"];
-    document.getElementById("org").innerHTML = print_orgs(tournament["org"],tournament["org_link"]);
+    const orgs = print_orgs(tournament["org"],tournament["org_link"]);
+    if (orgs != "") {
+        document.getElementById("t_org").innerHTML = "Organizer: ";
+        document.getElementById("org").innerHTML = orgs; }
     document.getElementById("bracket").innerHTML = html_link(tournament["bracket"],"Bracket");
     if (tournament["vod"] != null) {document.getElementById("vod").innerHTML = html_link(tournament["vod"],"VOD");}
     if (tournament["note"] != null) {document.getElementById("note").innerHTML = tournament["note"];}
@@ -319,6 +324,10 @@ function draw_tournament(tournament) {
         let td_player = document.createElement("td");
         td_player.innerHTML = player_link(player_name);
         tr.appendChild(td_player);
+        let td_flag = document.createElement("td");
+        td_flag.innerHTML = player_flags(player_name);
+        tr.appendChild(td_flag);
+        
         results.appendChild(tr);
     }
 }

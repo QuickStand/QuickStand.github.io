@@ -1,11 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 /* Main body and Titles */
 body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 2em;
 	font-size: 20px;
-	background-color: #111111;
+	background-color: #000000;
 	color: #dddddd;
 }
 
@@ -21,7 +21,7 @@ h2 {
 
 a[href] {
 	color: #dddddd;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a[href]:hover {
@@ -37,6 +37,33 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+
+.left {
+    text-align:left;
+    width:49%;
+    display: inline-block;
+}
+
+.right {
+    text-align:right;
+    width:50%;
+    display: inline-block;
+}
+
+/* quotes */
+#quote {
+    color: #16f7dd;
+}
+
+/* Inner Box */
+#card
+{ width: 900px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 20px 20px 20px 20px;
+  background: #101010;
+  border: 10px solid #050505;
+} 
 
 
 /* Tables */
@@ -60,8 +87,6 @@ tr:hover a[href] {
     text-decoration: underline;
 }
 
-@media (min-width: 1921px) {
-	body {
-		font-size: 18px;
-	}
+td a[href]{
+    text-decoration: none;
 }
