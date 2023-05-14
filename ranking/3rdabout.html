@@ -202,5 +202,18 @@
 
    </div>  
 
+
+   <script>
+// drawing the tournament list
+function draw_tournaments() {
+    const event_list = document.getElementById("event_list");
+    for (const event of tournaments) {
+        let li = document.createElement("li");
+        li.innerHTML = tournament_link(event);
+        event_list.appendChild(li);
+    }
+    return 0;
+}
+   </script>
    </body>
 </html>

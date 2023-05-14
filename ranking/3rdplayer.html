@@ -42,5 +42,86 @@
         </table>
 
     </div>
+
+    <script>
+// drawing the player card
+function draw_player(player_name) {
+    const p_name = document.getElementById("p_name");
+    p_name.innerHTML = player_flags(player_name) + player_name;
+    const score = all_scores(player_name);
+    // drawing the achievement list
+    if (score.length > 0) {
+        t_achievements = document.getElementById("t_achievements");
+        t_achievements.innerHTML = "Achievements:";
+        p_achievements = document.getElementById("p_achievements");
+        for (var i=0; i<best_results; i++) {
+            const result = score[i];
+            if (result != null) {
+                const r_tournament = result[1];
+                const r_score = result[0];
+                const r_rank = r_tournament["results"][player_name];
+                let tr = document.createElement("tr");
+                let td_rank = document.createElement("td");
+                td_rank.innerHTML = ordinal(r_rank.toString());
+                tr.appendChild(td_rank);
+                let td_tournament = document.createElement("td");
+                td_tournament.innerHTML = tournament_link(r_tournament);
+                tr.appendChild(td_tournament);
+                let td_points = document.createElement("td");
+                td_points.innerHTML = r_score.toString() + " pts"; 
+                tr.appendChild(td_points);
+                p_achievements.appendChild(tr);
+            }
+        }
+    }
+    // drawing the other results
+    if (score.length >3) {
+        t_others = document.getElementById("t_others");
+        t_others.innerHTML = "Other Results:";
+        p_others = document.getElementById("p_others");
+        for (var i=3; i<score.length; i++) {
+            const result = score[i];
+            const r_tournament = result[1];
+            const r_score = result[0];
+            const r_rank = r_tournament["results"][player_name];
+            let tr = document.createElement("tr");
+            let td_rank = document.createElement("td");
+            td_rank.innerHTML = ordinal(r_rank.toString());
+            tr.appendChild(td_rank);
+            let td_tournament = document.createElement("td");
+            td_tournament.innerHTML = tournament_link(r_tournament);
+            tr.appendChild(td_tournament);
+            let td_points = document.createElement("td");
+            td_points.innerHTML = r_score.toString() + " pts"; 
+            tr.appendChild(td_points);
+            p_others.appendChild(tr);
+            
+        }
+    }
+    // drawing total score
+    p_total = document.getElementById("p_total");
+    p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + " pts";
+    // drawng total ranking
+    p_ranking = document.getElementById("p_ranking");
+    const rank = get_rank(player_name);
+    p_ranking.innerHTML = "Total Ranking: #" + html_link("3rdrankings.html#"+rank,rank);
+    // drawing the quote
+    const quote = profiles[player_name]["quote"];
+    if (quote != null) {
+        document.getElementById("quote").innerHTML = "\"" + quote + "\"";
+    }
+}
+
+// drawing depending on the url argument
+function draw_player_url () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const player_name = urlParams.get("p");
+    if (player_name != null) {
+        draw_player(player_name);
+    }
+    return 0;
+}
+    </script>
    </body>
 </html>

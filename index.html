@@ -46,5 +46,20 @@
 
 
      </div>
+
+     <script>
+// drawing quickstand events only
+function draw_quickstand_tournaments() {
+    const quickstand_list = document.getElementById("quickstand_list");
+    for (const event of tournaments) {
+        if (event["org"].includes("QuickStand")) {
+            let li = document.createElement("li");
+            li.innerHTML = html_link("ranking/3rdtournament.html?t="+event["shortname"], event["name"]);
+            quickstand_list.appendChild(li);
+        }
+    }
+    return 0;
+}
+     </script>
    </body>
 </html>

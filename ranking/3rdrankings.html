@@ -34,5 +34,31 @@
         </tbody>
       </table>
      </div>
+
+     <script>
+// drawing the full ranking list
+function draw_list() {
+    const ranklist = document.getElementById("rankings");
+    const rankings = rank_all_players();
+    for (var i=0; i<rankings.length; i++) {
+        const entry = rankings[i];
+        let tr = document.createElement("tr");
+        tr.setAttribute("id",(i+1).toString())
+        let td_rank = document.createElement("td");
+        td_rank.innerHTML =  (i+1).toString();
+        tr.appendChild(td_rank);
+        let td_country = document.createElement("td");
+        td_country.innerHTML = player_flags(entry[0].toString());
+        tr.appendChild(td_country);
+        let td_name = document.createElement("td");
+        td_name.innerHTML = player_link(entry[0].toString());
+        tr.appendChild(td_name);
+        let td_points = document.createElement("td");
+        td_points.innerHTML = entry[1].toString() + " pts";
+        tr.appendChild(td_points);
+        ranklist.appendChild(tr);
+    }
+}
+    </script>
    </body>
 </html>
