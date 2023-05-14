@@ -145,7 +145,6 @@ function player_flags(player_name) {
     if (countries == null) { return ""; }
     var flags = "";
     for (const ctr of countries) {
-        console.log(ctr);
         flags += getflag(ctr) + " ";
     }
     return flags;
@@ -168,23 +167,39 @@ function tournament_link(tournament) {
     return html_link("3rdtournament.html?t="+tournament["shortname"], tournament["name"]);
 }
 
+// printing ordinal rankings
+// 1 becomes 1st, 3 becomes 3rd...
+function ordinal (rank) {
+    const last = rank % 10;
+    const lasttwo = rank % 100;
+    if (last == 1 && lasttwo != 11) { return rank + "st"; }
+    if (last == 2 && lasttwo != 12) { return rank + "nd"; }
+    if (last == 3 && lasttwo != 13) { return rank + "rd"; }
+    return rank + "th";
+
+}
+
 
 // drawing the full ranking list
 function draw_list() {
     const ranklist = document.getElementById("rankings");
-    console.log(ranklist);
     const rankings = rank_all_players();
     for (var i=0; i<rankings.length; i++) {
-        var entry = rankings[i];
-        let li = document.createElement("li");
-        li.innerHTML = (i+1).toString();
-        li.innerHTML += ") ";
-        li.innerHTML += player_flags(entry[0].toString());
-        li.innerHTML += player_link(entry[0].toString());
-        li.innerHTML += " - ";
-        li.innerHTML += entry[1].toString();
-        li.innerHTML += "pts";
-        ranklist.appendChild(li);
+        const entry = rankings[i];
+        let tr = document.createElement("tr");
+        let td_rank = document.createElement("td");
+        td_rank.innerHTML =  (i+1).toString();
+        tr.appendChild(td_rank);
+        let td_country = document.createElement("td");
+        td_country.innerHTML = player_flags(entry[0].toString());
+        tr.appendChild(td_country);
+        let td_name = document.createElement("td");
+        td_name.innerHTML = player_link(entry[0].toString());
+        tr.appendChild(td_name);
+        let td_points = document.createElement("td");
+        td_points.innerHTML = entry[1].toString() + " pts";
+        tr.appendChild(td_points);
+        ranklist.appendChild(tr);
     }
 }
 
@@ -204,10 +219,17 @@ function draw_player(player_name) {
                 const r_tournament = result[1];
                 const r_score = result[0];
                 const r_rank = r_tournament["results"][player_name];
-                let li = document.createElement("li");
-                li.innerHTML = "#" + r_rank.toString() + " - ";
-                li.innerHTML += tournament_link(r_tournament) + " - " + r_score.toString() + "pts"; 
-                p_achievements.appendChild(li);
+                let tr = document.createElement("tr");
+                let td_rank = document.createElement("td");
+                td_rank.innerHTML = ordinal(r_rank.toString());
+                tr.appendChild(td_rank);
+                let td_tournament = document.createElement("td");
+                td_tournament.innerHTML = tournament_link(r_tournament);
+                tr.appendChild(td_tournament);
+                let td_points = document.createElement("td");
+                td_points.innerHTML = r_score.toString() + " pts"; 
+                tr.appendChild(td_points);
+                p_achievements.appendChild(tr);
             }
         }
     }
@@ -221,10 +243,18 @@ function draw_player(player_name) {
             const r_tournament = result[1];
             const r_score = result[0];
             const r_rank = r_tournament["results"][player_name];
-            let li = document.createElement("li");
-            li.innerHTML = "#" + r_rank.toString() + " - ";
-            li.innerHTML += tournament_link(r_tournament) + " - " + r_score.toString() + "pts"; 
-            p_others.appendChild(li);
+            let tr = document.createElement("tr");
+            let td_rank = document.createElement("td");
+            td_rank.innerHTML = ordinal(r_rank.toString());
+            tr.appendChild(td_rank);
+            let td_tournament = document.createElement("td");
+            td_tournament.innerHTML = tournament_link(r_tournament);
+            tr.appendChild(td_tournament);
+            let td_points = document.createElement("td");
+            td_points.innerHTML = r_score.toString() + " pts"; 
+            tr.appendChild(td_points);
+            p_others.appendChild(tr);
+            
         }
     }
     // drawing total score
@@ -232,7 +262,7 @@ function draw_player(player_name) {
     p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + "pts";
     // drawng total ranking
     p_ranking = document.getElementById("p_ranking");
-    p_ranking.innerHTML = "Total Ranking: #" + get_rank(player_name);
+    p_ranking.innerHTML = "Total Ranking: #" + html_link("3rdrankings.html",get_rank(player_name));
     // drawing the quote
     const quote = profiles[player_name]["quote"];
     if (quote != null) {
@@ -282,9 +312,14 @@ function draw_tournament(tournament) {
     
     // print the result list
     for (const player_name in tournament["results"]) {
-        let li = document.createElement("li");
-        li.innerHTML = "#" + tournament["results"][player_name] + " - " + player_link(player_name);
-        results.appendChild(li);
+        let tr = document.createElement("tr");
+        let td_rank = document.createElement("td");
+        td_rank.innerHTML = ordinal(tournament["results"][player_name]);
+        tr.appendChild(td_rank);
+        let td_player = document.createElement("td");
+        td_player.innerHTML = player_link(player_name);
+        tr.appendChild(td_player);
+        results.appendChild(tr);
     }
 }
 

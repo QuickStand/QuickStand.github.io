@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+/* Main body and Titles */
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2em;
+	font-size: 20px;
+	background-color: #111111;
+	color: #dddddd;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 34px;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+a[href] {
+	color: #dddddd;
+    text-decoration: none;
+}
+
+a[href]:hover {
+	color: #eeb6f2;
+    text-decoration: underline;
+}
+
+li {
+	line-height: 1.5em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+  
+tr, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #bbbbbb;
+    border-top: 1px solid #bbbbbb;
+}
+  
+tr:hover {
+    background-color: #300022;
+}
+
+tr:hover a[href] {
+    text-decoration: underline;
+}
+
+@media (min-width: 1921px) {
+	body {
+		font-size: 18px;
+	}
+}
