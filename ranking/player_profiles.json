@@ -22,6 +22,15 @@ const profiles = {
     "RX": {
         "country":["JP"]
     },
+    "Tominaga": {
+        "country":["JP"]
+    },
+    "Genki": {
+        "country":["JP"]
+    },
+    "Boss": {
+        "country":["JP"]
+    },
     "ChiRithy": {
         "country":["CA"]
     },
@@ -73,6 +82,9 @@ const profiles = {
     "Klaww":{
         "country":["IT"],
     },
+    "Biollo":{
+        "country":["IT"],
+    },
     "Maurya":{
         "country":["US"],
     },
@@ -84,6 +96,9 @@ const profiles = {
     },
     "Bossomat":{
         "country":["DE"],
+    },
+    "Zouni":{
+        "country":["MA"],
     },
     "Otana":{
         "country":["FR"],
@@ -369,5 +384,9 @@ const profiles = {
     "TMac14":{
         "country":["FR"],
     },
+    "Tichoune":{
+        "country":["FR"],
+    },
+    
     
 }
