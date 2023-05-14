@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="style.css">
+     <script type="text/javascript" src="tournaments/hfs23.json"></script> 
+     <script type="text/javascript" src="tournaments/hfs22.json"></script> 
+     <script type="text/javascript" src="tournaments/mixup22.json"></script> 
+     <script type="text/javascript" src="tournaments/pbn3.json"></script> 
+     <script type="text/javascript" src="tournaments/pbn2.json"></script> 
+     <script type="text/javascript" src="tournaments/pbn1.json"></script> 
+     <script type="text/javascript" src="tournaments/judgement2.json"></script> 
+     <script type="text/javascript" src="tournaments/judgement1.json"></script> 
+     <script type="text/javascript" src="tournaments/saf19.json"></script> 
+     <script type="text/javascript" src="tournaments/stunfest22.json"></script> 
+     <script type="text/javascript" src="points.json"></script> 
+     <script type="text/javascript" src="player_profiles.json"></script>
+    <script type="text/javascript" src="ranking.js"></script>
+   </head>
+   <body onload="draw_tournaments();">
+
+   <div id="card">
+   
+      <h1>Events</h1>
+
+      <p> In this ranking, we consider tournaments that satisfy the following conditions:</p>
+      <ul>
+         <li>French events</li>
+         <li>With a double elimination tournament</li>
+         <li>With results available online (challonge, start.gg)</li>
+         <li>Open to all (not invitation-based)</li>
+         <li>On arcade hardware (cabs or superguns)</li>
+      </ul>
+
+      Using these conditions, we have considered the following events:
+      <ul id="event_list"></ul>
+      If we have missed any such event, let us know.
+      
+      <h1>French 3rd Strike Tournament Organizers</h1>
+
+      <table class="center">
+         <tbody>
+            <tr>
+               <td>QuickStand</td>
+               <td>Rennes</td>
+               <td>Organizes events in different cities.</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.ladose.net/">LaDose.NET</a></td>
+               <td>Lyon</td>
+               <td>Monthly tournaments and major events.</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.extralifecafe.com/">Extra Life Café</a></td>
+               <td>Paris</td>
+               <td>Regular meetups and monthly tournaments.</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.hfsplay.fr/">HFS</a></td>
+               <td>Vierzon</td>
+               <td>Annual Hado major tournament.</td>
+            </tr>
+            <tr>
+               <td><a href="https://twitter.com/firstattackbzh">First Attack</a></td>
+               <td>Morlaix</td>
+               <td>Monthly tournaments.</td>
+            </tr>
+            <tr>
+               <td><a href="https://twitter.com/GuardImpactVS">Guard Impact</a></td>
+               <td>Brest</td>
+               <td>Weekly meetups and occasional events.</td>
+            </tr>
+            <tr>
+               <td><a href="http://www.3hitcombo.fr/e-sport/">3HitCombo</a></td>
+               <td>Rennes</td>
+               <td>Monthly tournaments.</td>
+            </tr>
+            <tr>
+               <td><a href="https://twitter.com/ConfirmHit">Hit Confirm</a></td>
+               <td>Marseille</td>
+               <td>Monthly tournaments.</td>
+            </tr>
+
+         </tbody>
+     </table>
+      
+
+   </div>  
+
+   </body>
+</html>

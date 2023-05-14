@@ -1,6 +1,7 @@
 
 // all tournaments
-const tournaments = [hfs23, hfs22, mixup22, pbn3, pbn2, pbn1, judgement2, judgement1, saf19, stunfest22];
+// ordered from most recent to oldest
+const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, judgement1, saf19, pbn2, pbn1];
 
 // non year-adjusted score of a player at a tournament
 function base_score_player_tournament (player_name, tournament) {
@@ -343,6 +344,17 @@ function tournament_url () {
                 draw_tournament(t);
             }
         }
+    }
+    return 0;
+}
+
+// drawing the tournament list
+function draw_tournaments() {
+    const event_list = document.getElementById("event_list");
+    for (const event of tournaments) {
+        let li = document.createElement("li");
+        li.innerHTML = tournament_link(event);
+        event_list.appendChild(li);
     }
     return 0;
 }
