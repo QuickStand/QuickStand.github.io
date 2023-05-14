@@ -134,8 +134,9 @@ const profiles = {
     "AlabhamaMan":{
         "country":["FR"],
     },
-    "Boulbin":{
+    "Boulben":{
         "country":["FR"],
+	"quote":"Je suis retraité.",
     },
     "Sikaryu":{
         "country":["FR"],
