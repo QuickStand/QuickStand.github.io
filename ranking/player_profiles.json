@@ -192,6 +192,7 @@ const profiles = {
     },
     "Livid":{
         "country":["FR"],
+        "quote":"♪",
     },
     "ChapeauRéglisse":{
         "country":["FR"],
