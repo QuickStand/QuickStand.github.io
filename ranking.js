@@ -117,7 +117,24 @@ function rank_all_players() {
     return rankings.sort(compare_rankings);
 }
 
+// getting the rank of a player
+function get_rank(player_name) {
+    const rankings = rank_all_players();
+    for (var i=0; i<rankings.length; i++) {
+        ps = rankings[i];
+        if (ps[0] == player_name) {
+            return (i+1).toString();
+        }
+    }
+    return "None";
+}
 
+// linking to the personal page of each player
+function player_link(player_name) {
+    return "<a href='3rdplayer.html?p=" + player_name + "'>" + player_name + "</a>";
+}
+
+// drawing the full ranking list
 function draw_list() {
     const ranklist = document.getElementById("rankings");
     console.log(ranklist);
@@ -125,14 +142,70 @@ function draw_list() {
     for (var i=0; i<rankings.length; i++) {
         var entry = rankings[i];
         let li = document.createElement("li");
-        li.innerText = (i+1).toString();
-        li.innerText += ") ";
-        li.innerText += entry[0];
-        li.innerText += " - ";
-        li.innerText += entry[1].toString();
-        li.innerText += "pts";
+        li.innerHTML = (i+1).toString();
+        li.innerHTML += ") ";
+        li.innerHTML += player_link(entry[0].toString());
+        li.innerHTML += " - ";
+        li.innerHTML += entry[1].toString();
+        li.innerHTML += "pts";
         ranklist.appendChild(li);
     }
 }
 
-console.log(rank_all_players());
+// drawing the player card on 3rdplayer.html
+function draw_player(player_name) {
+    const p_name = document.getElementById("p_name");
+    p_name.innerHTML = player_name;
+    const score = all_scores(player_name);
+    // drawing the achievement list
+    if (score.length > 0) {
+        t_achievements = document.getElementById("t_achievements");
+        t_achievements.innerHTML = "Achievements:";
+        p_achievements = document.getElementById("p_achievements");
+        for (var i=0; i<best_results; i++) {
+            const result = score[i];
+            if (result != null) {
+                const r_tournament = result[1];
+                const r_score = result[0];
+                const r_rank = r_tournament["results"][player_name];
+                let li = document.createElement("li");
+                li.innerText = "#" + r_rank.toString() + " - ";
+                li.innerText += r_tournament["name"] + " - " + r_score.toString() + "pts"; 
+                p_achievements.appendChild(li);
+            }
+        }
+    }
+    // drawing the other results
+    if (score.length >3) {
+        t_others = document.getElementById("t_others");
+        t_others.innerHTML = "Other Results:";
+        p_others = document.getElementById("p_others");
+        for (var i=3; i<score.length; i++) {
+            const result = score[i];
+            const r_tournament = result[1];
+            const r_score = result[0];
+            const r_rank = r_tournament["results"][player_name];
+            let li = document.createElement("li");
+            li.innerText = "#" + r_rank.toString() + " - ";
+            li.innerText += r_tournament["name"] + " - " + r_score.toString() + "pts"; 
+            p_others.appendChild(li);
+        }
+    }
+    // drawing total score
+    p_total = document.getElementById("p_total");
+    p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + "pts";
+    // drawng total ranking
+    p_ranking = document.getElementById("p_ranking");
+    p_ranking.innerHTML = "Total Ranking: #" + get_rank(player_name);
+}
+
+// drawing depending on the url argument
+function draw_player_url () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const player_name = urlParams.get("p");
+    if (player_name != null) {
+        draw_player(player_name);
+    }
+    return 0;
+}
