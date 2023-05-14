@@ -18,6 +18,9 @@ function base_score_player_tournament (player_name, tournament) {
     else if (tournament["type"] == "major") {
         points = major_points;
     }
+    else if (tournament["type"] == "single") {
+        points = single_points;
+    }
     else {
         console.log ("Unknown tournament type");
         return 0;
@@ -184,6 +187,7 @@ function ordinal (rank) {
 function type_to_string(type) {
     if (type == "major") { return "Major Tournament"; }
     else if (type == "minor") { return "Minor Tournament"; }
+    else if (type == "single") { return "Single-Elimination Tournament"; }
     return "";
 }
 
