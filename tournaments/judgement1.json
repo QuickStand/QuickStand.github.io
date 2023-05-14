@@ -1,0 +1,38 @@
+const judgement1 = {
+    "name":"Judgement 1",
+    "shortname":"judgement1",
+    "bracket":"https://www.start.gg/tournament/insalan-xv/event/judgement-solo",
+    "org":["QuickStand"],
+    "org_link":[""],
+    "vod":"https://www.youtube.com/watch?v=_9roS-0III4",
+    "type":"minor",
+    "year":"2020",
+    "month":"March",
+    "results":
+    {
+        "MounB":"1",
+        "YaZ":"2",
+        "Victor":"3",
+        "Dobodry":"4",
+        "crhk":"5",
+        "MLK":"5",
+        "Farouk":"7",
+        "Niabanh":"7",
+        "PtitLee":"9",
+        "Mymoza":"9",
+        "Mwouisman":"9",
+        "Massi":"9",
+        "Aurèle":"13",
+        "Sogeking":"13",
+        "Sikaryu":"13",
+        "Raven":"13",
+        "Fardec":"17",
+        "Boulbin":"17",
+        "R":"17",
+        "Gabou":"17",
+        "Nehro":"17",
+        "Pingouin":"17",
+        "Virus":"17",
+        "Rechiku":"17"
+    }
+};

@@ -1,0 +1,37 @@
+const stunfest22 = {
+    "name":"Stunfest 2022",
+    "shortname":"stunfest22",
+    "bracket":"https://challonge.com/lr52pxc3/standings",
+    "org":["3HitCombo","QuickStand"],
+    "org_link":["http://www.3hitcombo.fr/",""],
+    "type":"minor",
+    "year":"2022",
+    "month":"May",
+    "results":
+    {
+        "Niabanh":"1",
+        "crhk":"2",
+        "Otana":"3",
+        "Victor":"4",
+        "MLK":"5",
+        "YaZ":"5",
+        "Boulbin":"7",
+        "Jehan":"7",
+        "Dobodry":"9",
+        "Fardec":"9",
+        "PtitLee":"9",
+        "R":"9",
+        "Cardb0xx":"13",
+        "Floodman":"13",
+        "Odasan":"13",
+        "Zyul":"13",
+        "Dan":"17",
+        "Gorka":"17",
+        "GTOMRick":"17",
+        "Lithlad":"17",
+        "Nehro":"17",
+        "Piranha":"17",
+        "Rechiku":"17",
+        "Solinvictus":"17"
+    }
+};
