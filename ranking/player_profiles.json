@@ -34,6 +34,9 @@ const profiles = {
     "Oryu": {
         "country":["JP"]
     },
+    "Rikimaru": {
+        "country":["JP"]
+    },
     "ChiRithy": {
         "country":["CA"]
     },
@@ -88,6 +91,12 @@ const profiles = {
     "GucciSuit":{
         "country":["GB"],
     },
+    "Tamraz":{
+        "country":["GB"],
+    },
+    "CrimeInal":{
+        "country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
     },
@@ -95,6 +104,15 @@ const profiles = {
         "country":["IT"],
     },
     "Maurya":{
+        "country":["US"],
+    },
+    "Exodus":{
+        "country":["US"],
+    },
+    "Lance":{
+        "country":["US"],
+    },
+    "Aliartguy":{
         "country":["US"],
     },
     "Exa":{
@@ -185,7 +203,7 @@ const profiles = {
         "country":["FR"],
     },
     "Zheng":{
-        "country":["FR"],
+        "country":["FR","CN"],
     },
     "Cardb0xx":{
         "country":["FR"],
@@ -397,6 +415,12 @@ const profiles = {
         "country":["FR"],
     },
     "Yox":{
+        "country":["FR"],
+    },
+    "Morse":{
+        "country":["FR"],
+    },
+    "Kalagan":{
         "country":["FR"],
     },
     
