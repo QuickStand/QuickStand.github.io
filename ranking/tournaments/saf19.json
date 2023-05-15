@@ -5,6 +5,7 @@ const saf19 = {
     "org":["GuardImpact"],
     "org_link":["https://twitter.com/GuardImpactVS"],
     "type":"minor",
+    "vod":"https://www.youtube.com/watch?v=9XJeBAMowTY",
     "year":"2019",
     "month":"November",
     "results":
