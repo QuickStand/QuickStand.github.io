@@ -31,6 +31,9 @@ const profiles = {
     "Boss": {
         "country":["JP"]
     },
+    "Oryu": {
+        "country":["JP"]
+    },
     "ChiRithy": {
         "country":["CA"]
     },
@@ -79,6 +82,12 @@ const profiles = {
     "Scotty2salty":{
         "country":["GB"],
     },
+    "Harley":{
+        "country":["GB"],
+    },
+    "GucciSuit":{
+        "country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
     },
@@ -92,6 +101,9 @@ const profiles = {
         "country":["BE"],
     },
     "Kenpachi":{
+        "country":["BE"],
+    },
+    "Tichoune":{
         "country":["BE"],
     },
     "Bossomat":{
@@ -384,9 +396,10 @@ const profiles = {
     "TMac14":{
         "country":["FR"],
     },
-    "Tichoune":{
+    "Yox":{
         "country":["FR"],
     },
+    
     
     
 }
