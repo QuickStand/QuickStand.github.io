@@ -2,7 +2,9 @@ const hfs18 = {
     "name":"Hado HFS 2018",
     "shortname":"HFS18",
     "bracket":"https://challonge.com/HADOs",
+    "team_bracket":"https://challonge.com/Hado2018Team",
     "vod":"https://www.youtube.com/watch?v=NZbkQJ_qtxw",
+    "team_vod":"https://www.youtube.com/watch?v=gFSqI8bMz-Y",
     "org":["HFS"],
     "org_link":["https://www.hfsplay.fr/"],
     "type":"single",
@@ -42,5 +44,16 @@ const hfs18 = {
         "Scotty2salty":"17",
         "Slim":"17",
         "Yox":"17"
+    },
+    "team_results":
+    {
+        "YaZ":"1",
+        "Sho":"1",
+        "Farouk":"2",
+        "Makaveli":"2",
+        "BillyKane":"3",
+        "Nach":"3",
+        "Coccis":"3",
+        "Otana":"3"
     }
 };

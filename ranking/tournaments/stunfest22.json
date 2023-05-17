@@ -2,6 +2,7 @@ const stunfest22 = {
     "name":"Stunfest 2022",
     "shortname":"stunfest22",
     "bracket":"https://challonge.com/lr52pxc3/standings",
+    "team_bracket":"https://www.start.gg/tournament/stunfest-2022/event/street-fighter-iii-third-strike-team-3v3/standings",
     "org":["3HitCombo","QuickStand"],
     "org_link":["http://www.3hitcombo.fr/","../index.html"],
     "type":"minor",
@@ -33,5 +34,17 @@ const stunfest22 = {
         "Piranha":"17",
         "Rechiku":"17",
         "Solinvictus":"17"
+    },
+    "team_results":
+    {
+        "YaZ":"1",
+        "Niabanh":"1",
+        "Otana":"1",
+        "MLK":"2",
+        "Rechiku":"2",
+        "crhk":"2",
+        "Victor":"3",
+        "Farouk":"3",
+        "Massi":"3"
     }
 };

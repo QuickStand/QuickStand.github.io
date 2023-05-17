@@ -423,6 +423,12 @@ const profiles = {
     "Kalagan":{
         "country":["FR"],
     },
+    "Gweilo":{
+        "country":["FR"],
+    },
+    "Onigiri":{
+        "country":["FR"],
+    },
     
     
     

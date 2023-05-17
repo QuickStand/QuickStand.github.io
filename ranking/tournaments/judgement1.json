@@ -2,9 +2,11 @@ const judgement1 = {
     "name":"Judgement 1",
     "shortname":"judgement1",
     "bracket":"https://www.start.gg/tournament/insalan-xv/event/judgement-solo",
+    "team_bracket":"https://www.start.gg/tournament/insalan-xv/event/judgement-team/",
     "org":["QuickStand"],
     "org_link":["../index.html"],
     "vod":"https://www.youtube.com/watch?v=_9roS-0III4",
+    "team_vod":"https://www.youtube.com/watch?v=g8y0K3DpLCQ",
     "type":"minor",
     "year":"2020",
     "month":"March",
@@ -34,5 +36,17 @@ const judgement1 = {
         "Pingouin":"17",
         "Virus":"17",
         "Rechiku":"17"
+    },
+    "team_results":
+    {
+        "Mymoza":"1",
+        "Victor":"1",
+        "Massi":"1",
+        "crhk":"2",
+        "MounB":"2",
+        "MLK":"2",
+        "Rufio":"3",
+        "Sogeking":"3",
+        "Fardec":"3"
     }
 };

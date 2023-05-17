@@ -2,9 +2,12 @@ const judgement2 = {
     "name":"Judgement 2",
     "shortname":"judgement2",
     "bracket":"https://www.start.gg/tournament/insalan-xvi/event/judgement-solo/",
+    "team_bracket":"https://www.start.gg/tournament/insalan-xvi/event/judgement-team-3v3",
     "org":["QuickStand"],
     "org_link":["../index.html"],
     "type":"minor",
+    "vod":"https://www.youtube.com/watch?v=VHUCTJQedIY",
+    "team_vod":"https://www.youtube.com/watch?v=UorqlDTviVA",
     "year":"2022",
     "month":"March",
     "results":
@@ -33,5 +36,17 @@ const judgement2 = {
         "Gorka":"17",
         "Virus":"17",
         "Fardec":"17"
+    },
+    "team_results":
+    {
+        "YaZ":"1",
+        "Mymoza":"1",
+        "Kiji":"1",
+        "crhk":"2",
+        "PtitLee":"2",
+        "Aurèle":"2",
+        "Fardec":"3",
+        "Pingouin":"3",
+        "Dobodry":"3"
     }
 };

@@ -2,6 +2,7 @@ const pbn2 = {
     "name":"Parry By Night 2",
     "shortname":"pbn2",
     "bracket":"https://www.start.gg/tournament/parry-by-night-2-1/events/tournoi-solo-single-tournament",
+    "team_bracket":"https://www.start.gg/tournament/parry-by-night-2-1/event/tournoi-team-team-tournament",
     "org":[],
     "org_link":[],
     "type":"major",
@@ -41,5 +42,20 @@ const pbn2 = {
         "Cactu":"25",
         "MPropre":"25",
         "Dan":"25"
+    },
+    "team_results":
+    {
+        "Coccis":"1",
+        "crhk":"1",
+        "MLK":"1",
+        "Nikola":"2",
+        "Niabanh":"2",
+        "Massi":"2",
+        "Nighty":"3",
+        "YaZ":"3",
+        "Otana":"3",
+        "Dan":"3",
+        "Gweilo":"3",
+        "Onigiri":"3"
     }
 };

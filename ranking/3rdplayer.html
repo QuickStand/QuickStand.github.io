@@ -46,6 +46,12 @@
             </tbody>
         </table>
 
+        <h2 id="t_nonranked"></h2>
+        <table class="center">
+            <tbody id="p_nonranked">
+            </tbody>
+        </table>
+
     </div>
 
     <script>
@@ -103,6 +109,27 @@ function draw_player(player_name) {
             
         }
     }
+
+    // drawing non-ranked results
+    const nr_scores = nonranked_scores(player_name);
+    const t_nonranked = document.getElementById("t_nonranked");
+    const p_nonranked = document.getElementById("p_nonranked");
+    if (nr_scores.length > 0) {t_nonranked.innerHTML = "Non-ranked Tournaments:";}
+    for (var i=0; i<nr_scores.length; i++) {
+        const result = nr_scores[i];
+        const r_rank = result[0];
+        const r_tournament = result[1];
+        const r_suffix = result[2];
+        let tr = document.createElement("tr");
+        let td_rank = document.createElement("td");
+        td_rank.innerHTML = ordinal(r_rank.toString());
+        tr.appendChild(td_rank);
+        let td_tournament = document.createElement("td");
+        td_tournament.innerHTML = html_link("3rdtournament.html?t="+r_tournament["shortname"]+"#t_team", r_tournament["name"]+r_suffix);
+        tr.appendChild(td_tournament);
+        p_nonranked.appendChild(tr);
+    }
+
     // drawing total score
     p_total = document.getElementById("p_total");
     p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + " pts";

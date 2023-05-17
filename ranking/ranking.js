@@ -75,6 +75,28 @@ function all_scores (player_name) {
     return results.sort(compare_results);
 }
 
+// comparing nonranked results: best rank first
+function compare_nonranked(a,b) {
+    if (a[0] > b[0]) {        
+        return 1;
+    }
+    return -1;
+}
+
+// finds all results in nonranked tournaments (eg team)
+function nonranked_scores (player_name) {
+    var results = [];
+    // team tournaments
+    for (const tnmt of tournaments) {
+        const team_results = tnmt["team_results"];
+        if (team_results != null) {
+            if (team_results[player_name] != null) {
+                results.push([team_results[player_name],tnmt," - Team"]);
+            }
+        }
+    }
+    return results.sort(compare_nonranked);
+}
 
 // total score of a player accross all tournaments
 // with weihgted results

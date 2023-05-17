@@ -2,9 +2,12 @@ const stunfest19 = {
     "name":"Stunfest 2019",
     "shortname":"stunfest19",
     "bracket":"https://www.start.gg/tournament/stunfest-2019-tournaments/event/street-fighter-iii-third-strike-solo-side/",
+    "team_bracket":"https://www.start.gg/tournament/stunfest-2019-tournaments/events/street-fighter-third-strike-team-3v3/",
     "org":["3HitCombo"],
     "org_link":["http://www.3hitcombo.fr/"],
     "type":"single",
+    "vod":"https://www.youtube.com/watch?v=aQw4EQoxMSE",
+    "team_vod":"https://www.youtube.com/watch?v=3k1IkUFE-JA",
     "year":"2019",
     "month":"May",
     "results":
@@ -41,5 +44,17 @@ const stunfest19 = {
         "Farouk":"17",
         "Azerty":"17",
         "Biollo":"17",
+    },
+    "team_results":
+    {
+        "Boss":"1",
+        "Genki":"1",
+        "Tominaga":"1",
+        "Coccis":"2",
+        "MounB":"2",
+        "Nighty":"2",
+        "Otana":"3",
+        "MLK":"3",
+        "Niabanh":"3"
     }
 };

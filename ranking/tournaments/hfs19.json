@@ -2,7 +2,9 @@ const hfs19 = {
     "name":"Hado HFS 2019",
     "shortname":"HFS19",
     "bracket":"https://www.start.gg/tournament/hfs-v-1/events/hado-solo/",
+    "team_bracket":"https://www.start.gg/tournament/hfs-v-1/event/hado-3v3-team",
     "vod":"https://youtu.be/9f7iJYNmbXc?t=2876",
+    "team_vod":"https://www.youtube.com/watch?v=LfknEsgSeMU",
     "org":["HFS"],
     "org_link":["https://www.hfsplay.fr/"],
     "type":"major",
@@ -42,5 +44,19 @@ const hfs19 = {
         "Dobodry":"25",
         "AlabhamaMan":"25",
         "Kenpachi":"25"
+    },
+    "team_results":
+    {
+       "Sho":"1",
+       "Nikola":"1",
+       "Otana":"1",
+       "RX":"2",
+       "Cactu":"2",
+       "Scotty2salty":"2",
+       "Farouk":"3",
+       "MounB":"3",
+       "Coccis":"3",
+       "Victor":"3",
+       "Kiji":"3",
     }
 };

@@ -50,7 +50,7 @@ function draw_list() {
         let tr = document.createElement("tr");
         tr.setAttribute("id",(i+1).toString())
         let td_rank = document.createElement("td");
-        td_rank.innerHTML =  (i+1).toString();
+        td_rank.innerHTML = (i+1).toString();
         tr.appendChild(td_rank);
         let td_country = document.createElement("td");
         td_country.innerHTML = player_flags(entry[0].toString());

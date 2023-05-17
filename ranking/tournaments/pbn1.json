@@ -2,6 +2,7 @@ const pbn1 = {
     "name":"Parry By Night 1",
     "shortname":"pbn1",
     "bracket":"https://www.start.gg/tournament/parry-by-night-1/event/tournoi-solo-single-tournament",
+    "team_bracket":"https://www.start.gg/tournament/parry-by-night-1/event/tournoi-team-team-tournament",
     "org":[],
     "org_link":[],
     "type":"major",
@@ -41,5 +42,20 @@ const pbn1 = {
         "Dan":"25",
         "Odasan":"25",
         "Tobitake":"25"
+    },
+    "team_results":
+    {
+        "Nikola":"1",
+        "Mymoza":"1",
+        "BillyKane":"1",
+        "Nach":"2",
+        "Daolicious":"2",
+        "Zheng":"2",
+        "MounB":"3",
+        "Lynohaz":"3",
+        "kupokupokupo":"3",
+        "Kiji":"3",
+        "Victor":"3",
+        "Farouk":"3"
     }
 };

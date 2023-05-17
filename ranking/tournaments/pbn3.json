@@ -2,6 +2,7 @@ const pbn3 = {
     "name":"Parry By Night 3",
     "shortname":"pbn3",
     "bracket":"https://www.start.gg/tournament/parry-by-night-3",
+    "team_bracket":"https://www.start.gg/tournament/parry-by-night-3/event/tournoi-team",
     "org":["QuickStand"],
     "org_link":["../index.html"],
     "type":"major",
@@ -41,5 +42,20 @@ const pbn3 = {
         "Azerty":"25",
         "MilesTheOne":"25",
         "fool":"25"
+    },
+    "team_results":
+    {
+        "Niabanh":"1",
+        "Massi":"1",
+        "Victor":"1",
+        "crhk":"2",
+        "MLK":"2",
+        "Coccis":"2",
+        "PtitLee":"3",
+        "Aurèle":"3",
+        "Zyul":"3",
+        "Lynohaz":"3",
+        "MounB":"3",
+        "AlabhamaMan":"3"
     }
 };

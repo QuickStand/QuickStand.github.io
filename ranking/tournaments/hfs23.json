@@ -2,7 +2,9 @@ const hfs23 = {
     "name":"Hado HFS 2023",
     "shortname":"HFS23",
     "bracket":"https://challonge.com/HaDo23",
+    "team_bracket":"https://challonge.com/fr/hadoT23",
     "vod":"https://www.youtube.com/watch?v=knnHt82_skk",
+    "team_vod":"https://www.youtube.com/watch?v=JsdXEuk708c",
     "org":["HFS"],
     "org_link":["https://www.hfsplay.fr/"],
     "note":"In the challonge, Odasan is actually Chiisai.",
@@ -43,5 +45,20 @@ const hfs23 = {
         "SonicSan":"25",
         "MetalBrasier":"25",
         "Zyul":"25"
+    },
+    "team_results":
+    {
+        "ChiRithy":"1",
+        "PTS1":"1",
+        "Coccis":"1",
+        "Niabanh":"2",
+        "Massi":"2",
+        "Mymoza":"2",
+        "BillyKane":"3",
+        "Victor":"3",
+        "Cactu":"3",
+        "YaZ":"3",
+        "Hayao":"3",
+        "Daolicious":"3"
     }
 };
