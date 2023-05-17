@@ -3,6 +3,8 @@
 // ordered from most recent to oldest
 const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, pbn2, hfs18, pbn1, hfs17];
 
+const nonranked_tournaments = [stunfest18, stunfest16, stunfest15, stunfest14];
+
 // non year-adjusted score of a player at a tournament
 function base_score_player_tournament (player_name, tournament) {
     const results = tournament["results"];
@@ -86,8 +88,17 @@ function compare_nonranked(a,b) {
 // finds all results in nonranked tournaments (eg team)
 function nonranked_scores (player_name) {
     var results = [];
-    // team tournaments
+    // team tournaments of ranked tournaments
     for (const tnmt of tournaments) {
+        const team_results = tnmt["team_results"];
+        if (team_results != null) {
+            if (team_results[player_name] != null) {
+                results.push([team_results[player_name],tnmt," - Team"]);
+            }
+        }
+    }
+    // nonranked tournaments
+    for (const tnmt of nonranked_tournaments) {
         const team_results = tnmt["team_results"];
         if (team_results != null) {
             if (team_results[player_name] != null) {
@@ -115,10 +126,36 @@ function total_score (player_name) {
 // getting all players that ever got a rank in a tournament
 function get_players () {
     var players = new Set();
+    // ranked tournaments
     for (const tnmt of tournaments) {
+        // solo
         var results = tnmt["results"];
         for (const [player, rank] of Object.entries(results)) {
             players.add(player);
+        }
+        // team
+        var team_results = tnmt["team_results"];
+        if (team_results != null) {
+            for (const [player,rank] of Object.entries(team_results)) {
+                players.add(player);
+            }
+        }
+    }
+    // nonranked tournaments
+    for (const tnmt of nonranked_tournaments) {
+        // solo
+        var results = tnmt["results"];
+        if (results != null) {
+            for (const [player, rank] of Object.entries(results)) {
+                players.add(player);
+            }
+        }
+        // team
+        var team_results = tnmt["team_results"];
+        if (team_results != null) {
+            for (const [player,rank] of Object.entries(team_results)) {
+                players.add(player);
+            }
         }
     }
     return players;
@@ -210,6 +247,7 @@ function type_to_string(type) {
     if (type == "major") { return "Major Tournament"; }
     else if (type == "minor") { return "Minor Tournament"; }
     else if (type == "single") { return "Single-Elimination Tournament"; }
+    else if (type == "nonranked") { return "Non-ranked Tournament"; }
     return "";
 }
 

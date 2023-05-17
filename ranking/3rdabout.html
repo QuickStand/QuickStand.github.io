@@ -18,11 +18,12 @@
      <script type="text/javascript" src="tournaments/saf19.json"></script> 
      <script type="text/javascript" src="tournaments/stunfest22.json"></script> 
      <script type="text/javascript" src="tournaments/stunfest19.json"></script> 
+     <script type="text/javascript" src="tournaments/nonranked.json"></script>
      <script type="text/javascript" src="points.json"></script> 
      <script type="text/javascript" src="player_profiles.json"></script>
     <script type="text/javascript" src="ranking.js"></script>
    </head>
-   <body onload="draw_tournaments();">
+   <body onload="draw_tournaments(); draw_nonranked_tournaments();">
 
       <nav id="header">
          <p><a href="../index.html"><img 
@@ -163,7 +164,7 @@
       </p>
       
 
-
+      <br>
       <h1>Events</h1>
 
       <p> In this ranking, we consider tournaments that satisfy the following conditions:</p>
@@ -175,13 +176,22 @@
          <li>No team tournaments</li>
       </ul>
 
-      Using these conditions, we gathered results from the following events:
+         Using these conditions, we gathered results from the following events:
       <table class="center">
          <tbody id="event_list">
          </tbody>
        </table>
       If we have missed any such event, let us know.
-      
+      </p>
+      <p>
+      We also archived the results of the following tournaments, even if they don't score any points:
+      <table class="center">
+         <tbody id="nonranked_list">
+         </tbody>
+       </table>
+      </p>
+
+      <br>
       <h1>French 3rd Strike Tournament Organizers</h1>
 
       <table class="center">
@@ -226,7 +236,6 @@
                <td>Marseille</td>
                <td>Monthly tournaments.</td>
             </tr>
-
          </tbody>
      </table>
       
@@ -239,6 +248,21 @@
 function draw_tournaments() {
     const event_list = document.getElementById("event_list");
     for (const event of tournaments) {
+        let tr = document.createElement("tr");
+        let td_date = document.createElement("td");
+        td_date.innerHTML = event["month"] + " " + event["year"];
+        tr.appendChild(td_date);
+        let td_link = document.createElement("td");
+        td_link.innerHTML = tournament_link(event);
+        tr.appendChild(td_link);
+        event_list.appendChild(tr);
+    }
+    return 0;
+}
+
+function draw_nonranked_tournaments() {
+    const event_list = document.getElementById("nonranked_list");
+    for (const event of nonranked_tournaments) {
         let tr = document.createElement("tr");
         let td_date = document.createElement("td");
         td_date.innerHTML = event["month"] + " " + event["year"];

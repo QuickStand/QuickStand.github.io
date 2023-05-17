@@ -18,6 +18,7 @@
      <script type="text/javascript" src="tournaments/saf19.json"></script> 
      <script type="text/javascript" src="tournaments/stunfest22.json"></script> 
      <script type="text/javascript" src="tournaments/stunfest19.json"></script> 
+     <script type="text/javascript" src="tournaments/nonranked.json"></script> 
      <script type="text/javascript" src="points.json"></script> 
      <script type="text/javascript" src="player_profiles.json"></script>
     <script type="text/javascript" src="ranking.js"></script>
@@ -61,6 +62,7 @@
    <script>
 // drawing the tournament page
 function draw_tournament(tournament) {
+    // mandatory fields
     document.getElementById("name").innerHTML = tournament["name"];
     document.getElementById("type").innerHTML = type_to_string(tournament["type"]);
     document.getElementById("date").innerHTML = tournament["month"] + " " + tournament["year"];
@@ -68,33 +70,35 @@ function draw_tournament(tournament) {
     if (orgs != "") {
         document.getElementById("t_org").innerHTML = "Organizer: ";
         document.getElementById("org").innerHTML = orgs; }
-    document.getElementById("bracket").innerHTML = html_link(tournament["bracket"],"Bracket");
-    if (tournament["vod"] != null) {document.getElementById("vod").innerHTML = html_link(tournament["vod"],"VOD");}
     if (tournament["note"] != null) {document.getElementById("note").innerHTML = tournament["note"];}
-    if (tournament["team_bracket"] != null) {document.getElementById("team_bracket").innerHTML = html_link(tournament["team_bracket"],"Team Bracket");}
-    if (tournament["team_vod"] != null) {document.getElementById("team_vod").innerHTML = html_link(tournament["team_vod"],"Team VOD");}
-    const results = document.getElementById("results");
     
-    // print the result list
-    for (const player_name in tournament["results"]) {
-        let tr = document.createElement("tr");
-        let td_rank = document.createElement("td");
-        td_rank.innerHTML = ordinal(tournament["results"][player_name]);
-        tr.appendChild(td_rank);
-        let td_player = document.createElement("td");
-        td_player.innerHTML = player_link(player_name);
-        tr.appendChild(td_player);
-        let td_flag = document.createElement("td");
-        td_flag.innerHTML = player_flags(player_name);
-        tr.appendChild(td_flag);
-        
-        results.appendChild(tr);
+    // print the result list of a solo tournament if applicable
+    if (tournament["results"] != null) {
+        const results = document.getElementById("results");
+        document.getElementById("bracket").innerHTML = html_link(tournament["bracket"],"Bracket");
+        if (tournament["vod"] != null) {document.getElementById("vod").innerHTML = html_link(tournament["vod"],"VOD");}
+        for (const player_name in tournament["results"]) {
+            let tr = document.createElement("tr");
+            let td_rank = document.createElement("td");
+            td_rank.innerHTML = ordinal(tournament["results"][player_name]);
+            tr.appendChild(td_rank);
+            let td_player = document.createElement("td");
+            td_player.innerHTML = player_link(player_name);
+            tr.appendChild(td_player);
+            let td_flag = document.createElement("td");
+            td_flag.innerHTML = player_flags(player_name);
+            tr.appendChild(td_flag);
+            
+            results.appendChild(tr);
+        }
     }
 
     // print the team tournament if applicable
     if (tournament["team_results"] != null) {
         document.getElementById("t_team").innerHTML = "Team Tournament";
         const team_results = document.getElementById("team_results");
+        if (tournament["team_bracket"] != null) {document.getElementById("team_bracket").innerHTML = html_link(tournament["team_bracket"],"Team Bracket");}
+        if (tournament["team_vod"] != null) {document.getElementById("team_vod").innerHTML = html_link(tournament["team_vod"],"Team VOD");}
         for (const player_name in tournament["team_results"]) {
             let tr = document.createElement("tr");
             let td_rank = document.createElement("td");
@@ -118,7 +122,14 @@ function tournament_url () {
     const urlParams = new URLSearchParams(queryString);
     const param = urlParams.get("t");
     if (param != null) {
+        // ranked tournaments
         for (const t of tournaments) {
+            if (param == t["shortname"]) {
+                draw_tournament(t);
+            }
+        }
+        // nonranked tournaments
+        for (const t of nonranked_tournaments) {
             if (param == t["shortname"]) {
                 draw_tournament(t);
             }

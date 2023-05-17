@@ -37,6 +37,33 @@ const profiles = {
     "Rikimaru": {
         "country":["JP"]
     },
+    "D44Bas": {
+        "country":["JP"]
+    },
+    "Momochi": {
+        "country":["JP"]
+    },
+    "Haitani": {
+        "country":["JP"]
+    },
+    "RF": {
+        "country":["JP"]
+    },
+    "Umezono": {
+        "country":["JP"]
+    },
+    "Dogura": {
+        "country":["JP"]
+    },
+    "Go1": {
+        "country":["JP"]
+    },
+    "MOV": {
+        "country":["JP"]
+    },
+    "StormKubo": {
+        "country":["JP"]
+    },
     "ChiRithy": {
         "country":["CA"]
     },
@@ -97,6 +124,9 @@ const profiles = {
     "CrimeInal":{
         "country":["GB"],
     },
+    "RyanHart":{
+        "country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
     },
@@ -111,6 +141,9 @@ const profiles = {
     },
     "Lance":{
         "country":["US"],
+    },
+    "JustinWong":{
+        "country":["US","CA"],
     },
     "Aliartguy":{
         "country":["GB"],
@@ -129,6 +162,9 @@ const profiles = {
     },
     "Zouni":{
         "country":["MA"],
+    },
+    "Nindo":{
+        "country":["NL"],
     },
     "Otana":{
         "country":["FR"],
@@ -415,7 +451,7 @@ const profiles = {
         "country":["FR"],
     },
     "Yox":{
-        "country":["FR"],
+        "country":["FR","MX"],
     },
     "Morse":{
         "country":["FR"],
