@@ -203,6 +203,9 @@ const profiles = {
     "MounB":{
         "country":["FR","JP"],
     },
+    "Marko":{
+        "country":["FR","JP"],
+    },
     "Jehan":{
         "country":["FR"],
     },
@@ -463,6 +466,27 @@ const profiles = {
         "country":["FR"],
     },
     "Onigiri":{
+        "country":["FR"],
+    },
+    "PaddyHacker":{
+        "country":["FR"],
+    },
+    "Rafael":{
+        "country":["FR"],
+    },
+    "Clint":{
+        "country":["FR"],
+    },
+    "AngelKillah":{
+        "country":["FR"],
+    },
+    "Omed":{
+        "country":["FR"],
+    },
+    "Boxer":{
+        "country":["FR"],
+    },
+    "Bob":{
         "country":["FR"],
     },
     

@@ -3,7 +3,7 @@
 // ordered from most recent to oldest
 const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, pbn2, hfs18, pbn1, hfs17];
 
-const nonranked_tournaments = [stunfest18, stunfest16, stunfest15, stunfest14];
+const nonranked_tournaments = [stunfest18, stunfest16, kots2, stunfest15, kots1, stunfest14];
 
 // non year-adjusted score of a player at a tournament
 function base_score_player_tournament (player_name, tournament) {
@@ -79,7 +79,7 @@ function all_scores (player_name) {
 
 // comparing nonranked results: best rank first
 function compare_nonranked(a,b) {
-    if (a[0] > b[0]) {        
+    if (Number(a[0]) > Number(b[0])) {        
         return 1;
     }
     return -1;
@@ -93,16 +93,24 @@ function nonranked_scores (player_name) {
         const team_results = tnmt["team_results"];
         if (team_results != null) {
             if (team_results[player_name] != null) {
-                results.push([team_results[player_name],tnmt," - Team"]);
+                results.push([team_results[player_name],tnmt," - Team","#t_team"]);
             }
         }
     }
     // nonranked tournaments
     for (const tnmt of nonranked_tournaments) {
+        // solo
+        const solo_results = tnmt["results"];
+        if (solo_results != null) {
+            if (solo_results[player_name] != null) {
+                results.push([solo_results[player_name],tnmt,"",""]);
+            }
+        }
+        // team
         const team_results = tnmt["team_results"];
         if (team_results != null) {
             if (team_results[player_name] != null) {
-                results.push([team_results[player_name],tnmt," - Team"]);
+                results.push([team_results[player_name],tnmt," - Team","#t_team"]);
             }
         }
     }

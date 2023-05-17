@@ -121,12 +121,13 @@ function draw_player(player_name) {
         const r_rank = result[0];
         const r_tournament = result[1];
         const r_suffix = result[2];
+        const r_anchor = result[3];
         let tr = document.createElement("tr");
         let td_rank = document.createElement("td");
         td_rank.innerHTML = ordinal(r_rank.toString());
         tr.appendChild(td_rank);
         let td_tournament = document.createElement("td");
-        td_tournament.innerHTML = html_link("3rdtournament.html?t="+r_tournament["shortname"]+"#t_team", r_tournament["name"]+r_suffix);
+        td_tournament.innerHTML = html_link("3rdtournament.html?t="+r_tournament["shortname"]+r_anchor, r_tournament["name"]+r_suffix);
         tr.appendChild(td_tournament);
         p_nonranked.appendChild(tr);
     }
