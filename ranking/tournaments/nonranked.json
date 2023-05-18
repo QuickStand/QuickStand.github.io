@@ -145,3 +145,42 @@ const kots2 = {
         "Zheng":"3"
     }
 }
+
+const basf21 = {
+    "name":"Breizh Arcade Summer Fest 2021",
+    "shortname":"basf21",
+    "bracket":"https://challonge.com/yp0dt5mt/",
+    "org":["First Attack"],
+    "org_link":["https://twitter.com/firstattackbzh"],
+    "type":"nonranked",
+    "vod":"https://www.twitch.tv/videos/1097774749",
+    "year":"2021",
+    "month":"July",
+    "results":
+    {
+        "YaZ":"1",
+        "Niabanh":"2",
+        "Victor":"3",
+        "MounB":"4",
+        "Kiji":"5",
+        "Odasan":"5",
+        "Aurèle":"7",
+        "PtitLee":"7",
+        "Cardb0xx":"9",
+        "Farouk":"9",
+        "Pe1port":"9",
+        "Jehan":"9",
+        "ChapeauRéglisse":"13",
+        "MilesTheOne":"13",
+        "Sikaryu":"13",
+        "Azerty":"13",
+        "Cheminot":"17",
+        "DoubleU":"17",
+        "Isimorn":"17",
+        "Kikikirissx":"17",
+        "MaxLeSac":"17",
+        "Pierrot":"17",
+        "Raven":"17",
+        "Zarghatt":"17"
+    }
+}

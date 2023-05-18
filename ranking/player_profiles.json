@@ -489,7 +489,24 @@ const profiles = {
     "Bob":{
         "country":["FR"],
     },
-    
+    "Pe1port":{
+        "country":["FR"],
+    },
+    "Cheminot":{
+        "country":["FR"],
+    },
+    "DoubleU":{
+        "country":["FR"],
+    },
+    "Kikikirissx":{
+        "country":["FR"],
+    },
+    "Pierrot":{
+        "country":["FR"],
+    },
+    "Zarghatt":{
+        "country":["FR"],
+    },
     
     
 }
