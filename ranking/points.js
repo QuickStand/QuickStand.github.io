@@ -10,7 +10,7 @@ const major_points = {
     "13":"72",
     "17":"48",
     "25":"32"
-}
+};
 
 // points given to each specific rank in a minor tournament
 const minor_points = {
@@ -23,7 +23,7 @@ const minor_points = {
     "9":"60",
     "13":"48",
     "17":"32"
-}
+};
 
 const single_points = {
     "1":"151",
@@ -33,7 +33,7 @@ const single_points = {
     "5":"112",
     "9":"80",
     "17":"32"
-}
+};
 
 // how much to multiply a score with depending on how many years have passed since the result
 const year_multiplicator = {
@@ -43,7 +43,7 @@ const year_multiplicator = {
     "3":"12",
     "4":"11",
     "other":"10"
-}
+};
 
 // for now, we only take into account the 3 best results of each player
 const best_results = 3;
@@ -53,4 +53,4 @@ const best_multiplicator = {
     "0":"5",
     "1":"3",
     "2":"2"
-}
+};
