@@ -94,6 +94,9 @@ const profiles = {
     "RC":{
         "country":["SE"],
     },
+    "Cyrox":{
+        "country":["SE"],
+    },
     "Cactu":{
         "country":["GB"],
     },
@@ -125,6 +128,9 @@ const profiles = {
         "country":["GB"],
     },
     "RyanHart":{
+        "country":["GB"],
+    },
+    "Percy":{
         "country":["GB"],
     },
     "Klaww":{
@@ -508,6 +514,33 @@ const profiles = {
         "country":["FR"],
     },
     "Morphaman":{
+        "country":["FR"],
+    },
+    "RyoKGU":{
+        "country":["FR"],
+    },
+    "Pecheur":{
+        "country":["FR"],
+    },
+    "Benjamin":{
+        "country":["FR"],
+    },
+    "Miso":{
+        "country":["FR"],
+    },
+    "PartyBrain5000":{
+        "country":["FR"],
+    },
+    "Stef":{
+        "country":["FR"],
+    },
+    "FirstSogeking":{
+        "country":["FR"],
+    },
+    "Saverio":{
+        "country":["FR"],
+    },
+    "Max":{
         "country":["FR"],
     },
 }

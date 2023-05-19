@@ -20,7 +20,7 @@ const stunfest18 = {
         "Mymoza":"3",
         "kupokupokupo":"3"
     }
-}
+};
 
 const stunfest16 = {
     "name":"Stunfest 2016",
@@ -43,7 +43,7 @@ const stunfest16 = {
         "Dogura":"3",
         "Go1":"3"
     }
-}
+};
 
 const stunfest15 = {
     "name":"Stunfest 2015",
@@ -66,7 +66,7 @@ const stunfest15 = {
         "Coccis":"3",
         "RyanHart":"3"
     }
-}
+};
 
 const stunfest14 = {
     "name":"Stunfest 2014",
@@ -89,62 +89,7 @@ const stunfest14 = {
         "RyanHart":"3",
         "Nindo":"3"
     }
-}
-
-const kots1 = {
-    "name":"King of Third Strike 1",
-    "shortname":"kots1",
-    "bracket":"https://kingof3rd.wordpress.com/2014/09/07/ko3rd-tournament-results/",
-    "org":[],
-    "org_link":[],
-    "type":"nonranked",
-    "year":"2014",
-    "month":"September",
-    "results":
-    {
-        "BillyKane":"1",
-        "Marko":"2",
-        "Zheng":"3",
-        "Mymoza":"4",
-        "Niabanh":"5",
-        "Jason":"5",
-        "Coccis":"7",
-        "Yox":"7",
-        "Massi":"9",
-        "Nikola":"9",
-        "PaddyHacker":"9",
-        "Makaveli":"9",
-        "YaZ":"13",
-        "Victor":"13",
-        "Rafael":"13",
-        "Clint":"13",
-        "AngelKillah":"17",
-        "Omed":"17",
-        "Boxer":"17",
-        "Bob":"17",
-        "3J":"17",
-        "Kiji":"17",
-        "Dan":"17",
-        "Nighty":"17",
-    }
-}
-
-const kots2 = {
-    "name":"King of Third Strike 2",
-    "shortname":"kots2",
-    "bracket":"https://kingof3rd.wordpress.com/2015/10/10/yaz-takes-the-crown/",
-    "org":[],
-    "org_link":[],
-    "type":"nonranked",
-    "year":"2015",
-    "month":"September",
-    "results":
-    {
-        "YaZ":"1",
-        "Nikola":"2",
-        "Zheng":"3"
-    }
-}
+};
 
 const basf21 = {
     "name":"Breizh Arcade Summer Fest 2021",
@@ -183,4 +128,4 @@ const basf21 = {
         "Raven":"17",
         "Zarghatt":"17"
     }
-}
+};

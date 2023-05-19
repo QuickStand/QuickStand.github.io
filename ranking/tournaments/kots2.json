@@ -1,0 +1,36 @@
+const kots2 = {
+    "name":"King of Third Strike 2",
+    "shortname":"kots2",
+    "bracket":"https://challonge.com/KingofThirdstrike",
+    "org":["ArcadeStreet"],
+    "org_link":[],
+    "type":"minor",
+    "year":"2015",
+    "month":"September",
+    "results":
+    {
+        "YaZ":"1",
+        "Nikola":"2",
+        "Zheng":"3",
+        "Coccis":"4",
+        "Cyrox":"5",
+        "Farouk":"5",
+        "BillyKane":"7",
+        "Victor":"7",
+        "Nighty":"9",
+        "RyoKGU":"9",
+        "Raiser":"9",
+        "Yox":"9",
+        "Massi":"13",
+        "MPropre":"13",
+        "Mymoza":"13",
+        "Pecheur":"13",
+        "Benjamin":"17",
+        "MLK":"17",
+        "Izil":"17",
+        "Miso":"17",
+        "Niabanh":"17",
+        "PartyBrain5000":"17",
+        "Tobitake":"17"
+    }
+}

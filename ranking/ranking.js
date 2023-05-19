@@ -1,9 +1,9 @@
 
 // all tournaments
 // ordered from most recent to oldest
-const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, p2p, pbn2, hfs18, pbn1, hfs17];
+const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, p2p, pbn2, hfs18, pbn1, hfs17, kots2, kots1];
 
-const nonranked_tournaments = [basf21, stunfest18, stunfest16, kots2, stunfest15, kots1, stunfest14];
+const nonranked_tournaments = [basf21, stunfest18, stunfest16, stunfest15, stunfest14];
 
 // non year-adjusted score of a player at a tournament
 function base_score_player_tournament (player_name, tournament) {
