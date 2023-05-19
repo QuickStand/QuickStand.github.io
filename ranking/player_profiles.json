@@ -507,6 +507,7 @@ const profiles = {
     "Zarghatt":{
         "country":["FR"],
     },
-    
-    
+    "Morphaman":{
+        "country":["FR"],
+    },
 }

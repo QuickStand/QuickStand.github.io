@@ -1,7 +1,7 @@
 
 // all tournaments
 // ordered from most recent to oldest
-const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, pbn2, hfs18, pbn1, hfs17];
+const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, p2p, pbn2, hfs18, pbn1, hfs17];
 
 const nonranked_tournaments = [basf21, stunfest18, stunfest16, kots2, stunfest15, kots1, stunfest14];
 
