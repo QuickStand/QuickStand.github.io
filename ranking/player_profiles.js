@@ -430,7 +430,7 @@ const profiles = {
         "country":["FR"],
     },
     "ChefBravo":{
-        "country":["FR"],
+        "country":["FR","ES"],
     },
     "Warner":{
         "country":["FR"],
