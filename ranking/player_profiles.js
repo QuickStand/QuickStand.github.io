@@ -543,4 +543,10 @@ const profiles = {
     "Max":{
         "country":["FR"],
     },
+    "Sangave":{
+        "country":["FR"],
+    },
+    "Scavs":{
+        "country":["FR"],
+    },
 }
