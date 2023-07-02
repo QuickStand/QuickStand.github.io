@@ -221,6 +221,16 @@ function player_flags(player_name) {
     return flags;
 }
 
+// getting the player name from a startgg id
+function get_name_from_startgg(startid) {
+    for (const [name,profile] of Object.entries(profiles)) {
+        let player_start = profile["startgg"];
+        if (player_start != null && player_start == startid) {
+            return name;
+        }
+    }
+    return null;
+}
 
 // Produces html link to bracket
 function html_link(url,name) {

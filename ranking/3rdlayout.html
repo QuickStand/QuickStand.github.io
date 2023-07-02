@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title>QuickStand French 3S Ranking</title>
+     <link rel="icon" href="../q_logo.png" type="image/png">
+     <link rel="stylesheet" href="layout_style.css">
+     <script type="text/javascript" src="tournaments/hfs23.js"></script> 
+     <script type="text/javascript" src="tournaments/hfs22.js"></script> 
+     <script type="text/javascript" src="tournaments/hfs19.js"></script> 
+     <script type="text/javascript" src="tournaments/hfs18.js"></script> 
+     <script type="text/javascript" src="tournaments/hfs17.js"></script> 
+     <script type="text/javascript" src="tournaments/hfsreborn.js"></script>
+     <script type="text/javascript" src="tournaments/mixup22.js"></script> 
+     <script type="text/javascript" src="tournaments/pbn3.js"></script> 
+     <script type="text/javascript" src="tournaments/pbn2.js"></script> 
+     <script type="text/javascript" src="tournaments/pbn1.js"></script> 
+     <script type="text/javascript" src="tournaments/pax18.js"></script> 
+     <script type="text/javascript" src="tournaments/judgement2.js"></script> 
+     <script type="text/javascript" src="tournaments/judgement1.js"></script> 
+     <script type="text/javascript" src="tournaments/saf19.js"></script> 
+     <script type="text/javascript" src="tournaments/p2p.js"></script> 
+     <script type="text/javascript" src="tournaments/stunfest22.js"></script> 
+     <script type="text/javascript" src="tournaments/stunfest19.js"></script> 
+     <script type="text/javascript" src="tournaments/kots1.js"></script> 
+     <script type="text/javascript" src="tournaments/kots2.js"></script> 
+     <script type="text/javascript" src="tournaments/nonranked.js"></script>
+     <script type="text/javascript" src="points.js"></script> 
+     <script type="text/javascript" src="player_profiles.js"></script>
+    <script type="text/javascript" src="ranking.js"></script>
+   </head>
+   <body onload="draw_player_layout_url();">
+
+
+    <div class="anim box">
+        <div id="header">
+            <div id="name"></div>
+            <div id="rank"></div>
+        </div>
+        <div id="quote"></div>
+        <div id="tablebox"><table class="center">
+            <tbody id="results">
+            </tbody>
+         </table></div>
+        </ul>
+    </div>
+
+
+    <script>
+// drawing the player card
+function draw_player_layout(player_name) {
+    const p_name = document.getElementById("name");
+    // name
+    p_name.innerHTML = player_flags(player_name) + player_name;
+    const score = all_scores(player_name);
+    // drawing the achievement list
+    if (score.length > 0) {
+        results = document.getElementById("results");
+        for (var i=0; i<3; i++) {
+            const result = score[i];
+            if (result != null) {
+                const r_tournament = result[1];
+                const r_rank = r_tournament["results"][player_name];
+                let tr = document.createElement("tr");
+                let td_rank = document.createElement("td");
+                td_rank.innerHTML = ordinal(r_rank.toString());
+                tr.appendChild(td_rank);
+                let td_tournament = document.createElement("td");
+                td_tournament.innerHTML = r_tournament["name"];
+                tr.appendChild(td_tournament);
+                results.appendChild(tr);
+            }
+        }
+    }
+    // drawing total ranking
+    const p_ranking = document.getElementById("rank");
+    const rank = get_rank(player_name);
+    if (rank != "None") { p_ranking.innerHTML = "QS#" + rank.toString(); }
+    // drawing the quote
+    const profile = profiles[player_name];
+    if (profile != null) {
+        const quote = profile["quote"];
+        if (quote != null) {
+            document.getElementById("quote").innerHTML = "\"" + quote + "\"";
+        }
+    }   
+}
+
+function draw_from_startgg(startid) {
+    const name = get_name_from_startgg(startid);
+    if (name != null) {
+        draw_player_layout(name);
+    }
+}
+
+// drawing depending on the url argument
+function draw_player_layout_url () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const player_name = urlParams.get("p");
+    if (player_name != null) {
+        draw_player_layout(player_name);
+        return 0;
+    }
+    const player_startgg = urlParams.get("s");
+    if (player_startgg != null) {
+        draw_from_startgg(player_startgg);
+        return 0;
+    }
+    return 0;
+}
+    </script>
+   </body>
+</html>

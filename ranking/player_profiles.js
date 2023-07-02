@@ -1,13 +1,16 @@
 const profiles = {
     "Aurèle":{
         "country":["FR","CH"],
+        "startgg":"f2a4ac27",
     },
     "PtitLee":{
         "country":["FR"],
+        "startgg":"cf0a8db9",
     },
     "crhk":{
         "country":["FR"],
-        "quote":"Parfois l'instinct vaut mieux que la réflexion."
+        "quote":"Parfois l'instinct vaut mieux que la réflexion.",
+        "startgg":"44fe6e10",
     },
     "Niabanh":{
         "country":["FR"],

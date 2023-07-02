@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* Font for flag emojis */
+@font-face {
+    font-family: NotoColorEmojiLimited;
+    unicode-range: U+1F1E6-1F1FF;
+    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+  }
+
+.box {
+  width: 400px;
+  height:200px;
+  background-color: #292F36; 
+  color: white;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  width: 400px;
+  height: 40px;
+  background: linear-gradient(135deg, #991908 0%,#ee2106 22%,#b93d18 43%,#d63707 57%,#f19e03 93%,#dbc500 100%);
+  color: #EEEDEB;
+}
+
+#name {
+  width : 300px;
+  padding-top:5px;
+  padding-left:20px;
+  float : left;
+  font-weight: 900;
+  font-size:22px;
+}
+
+#rank {
+  width : 60px;
+  padding-top:8px;
+  padding-right:20px;
+  float : left;
+  font-weight: 600;
+}
+
+#quote {
+  color: #AB81CD;
+  text-align:center;  
+}
+
+ /* Animation */ 
+.anim {
+  animation: anim .8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotateX(0deg) scale(1,1) translate(-300px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) scale(1,1);
+    opacity: 1;
+  }
+  
+}
+
+/* Tables */
+#tablebox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+tr, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+}
+
+td a[href]{
+  text-decoration: none;
+}
