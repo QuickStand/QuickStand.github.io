@@ -169,6 +169,12 @@ function get_players () {
     return players;
 }
 
+// all players that have a profile
+// even if they don't have any results
+function get_players_with_profile() {
+    return new Set(Object.keys(profiles));
+}
+
 // comparing the total score of two players
 function compare_rankings(a,b) {
     if (a[1] > b[1]) {        
