@@ -170,6 +170,8 @@ const profiles = {
 	},
     "Klaww":{
         "country":["IT"],
+        "quote":"Give us the damn mona lisa back",
+		"startgg":"ca00f5ab",
     },
     "Biollo":{
         "country":["IT"],
