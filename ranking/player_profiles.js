@@ -96,7 +96,9 @@ const profiles = {
 		"startgg":"9733c30a",
 	},
     "Z3rog":{
-        "country":["SE"],
+        "country":["SE","DE"],
+        "quote":"知己知彼 百战不殆",
+		"startgg":"db0c5fbe",
     },
     "Fjaza":{
         "country":["SE"],
@@ -111,6 +113,8 @@ const profiles = {
     },
     "RC":{
         "country":["SE"],
+        "quote":"Jag tror på köttets lust och själens obotliga ensamhet",
+		"startgg":"08746471",
     },
     "Cyrox":{
         "country":["SE"],
@@ -700,5 +704,9 @@ const profiles = {
 		"country":["FR"],
 		"quote":"PdM",
 		"startgg":"3b2b57aa",
+	},
+    "JOJOMASTERS":{
+		"country":["FR"],
+		"startgg":"928d2478",
 	},
 }
