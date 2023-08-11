@@ -77,6 +77,38 @@ function all_scores (player_name) {
     return results.sort(compare_results);
 }
 
+// returns the team tournaments medals
+// gold medals at index 0 and so on
+function team_medals (player_name) {
+    var medals = [0,0,0];
+    // ranked tournaments
+    for (const tnmt of tournaments) {
+        const team_results = tnmt["team_results"];
+        if (team_results != null) {
+            const rank = team_results[player_name];
+            if (rank != null & rank <=3) {
+                medals[rank-1] = medals[rank-1] + 1;;
+            }
+        }
+    }
+    // non-ranked tournaments
+    for (const tnmt of nonranked_tournaments) {
+        const team_results = tnmt["team_results"];
+        if (team_results != null) {
+            const rank = team_results[player_name];
+            if (rank != null & rank <=3) {
+                medals[rank-1] = medals[rank-1] + 1;;
+            }
+        }
+    }
+    return medals;
+}
+
+// just checks that there are some medals to display
+function has_medals(medals) {
+    return (medals[0] != 0 || medals[1] != 0 || medals[2] != 0);
+}
+
 // comparing nonranked results: best rank first
 function compare_nonranked(a,b) {
     if (Number(a[0]) > Number(b[0])) {        

@@ -54,6 +54,7 @@
         </table>
 
         <h2 id="t_nonranked"></h2>
+        <p><span id="medals"></span></p>
         <table class="center">
             <tbody id="p_nonranked">
             </tbody>
@@ -136,6 +137,16 @@ function draw_player(player_name) {
         td_tournament.innerHTML = html_link("3rdtournament.html?t="+r_tournament["shortname"]+r_anchor, r_tournament["name"]+r_suffix);
         tr.appendChild(td_tournament);
         p_nonranked.appendChild(tr);
+    }
+
+    // drawing team medals
+    const s_medals = document.getElementById("medals");
+    const medals = team_medals(player_name);
+    if (has_medals(medals)) {
+        s_medals.innerHTML = "<b>Team medals: </b>";
+        for (var i=0; i<medals[0]; i++) { s_medals.innerHTML += "🥇"; }
+        for (var i=0; i<medals[1]; i++) { s_medals.innerHTML += "🥈"; }
+        for (var i=0; i<medals[2]; i++) { s_medals.innerHTML += "🥉"; }
     }
 
     // drawing total score
