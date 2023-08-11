@@ -52,28 +52,31 @@
 function draw_list() {
     const ranklist = document.getElementById("rankings");
     const rankings = rank_all_players();
-    for (var i=0; i<rankings.length; i++) {
-        const entry = rankings[i];
-        let tr = document.createElement("tr");
-        tr.setAttribute("id",(i+1).toString())
-        let td_rank = document.createElement("td");
-        td_rank.innerHTML = (i+1).toString();
-        tr.appendChild(td_rank);
-        let td_country = document.createElement("td");
-        td_country.innerHTML = player_flags(entry[0].toString());
-        tr.appendChild(td_country);
-        let td_name = document.createElement("td");
-        td_name.innerHTML = player_link(entry[0].toString());
-        tr.appendChild(td_name);
-        let td_points = document.createElement("td");
-        if (entry[1] != 0) {
-          td_points.innerHTML = entry[1].toString() + " pts";
-        } else {
-          td_points.innerHTML = "-";
-        }
-        tr.appendChild(td_points);
-        ranklist.appendChild(tr);
+    for (player of rankings) {
+      const name = player[0];
+      const score = player[1];
+      const rank = player[2];
+      let tr = document.createElement("tr");
+      tr.setAttribute("id",rank.toString())
+      let td_rank = document.createElement("td");
+      td_rank.innerHTML = rank.toString();
+      tr.appendChild(td_rank);
+      let td_country = document.createElement("td");
+      td_country.innerHTML = player_flags(name.toString());
+      tr.appendChild(td_country);
+      let td_name = document.createElement("td");
+      td_name.innerHTML = player_link(name.toString());
+      tr.appendChild(td_name);
+      let td_points = document.createElement("td");
+      if (score != 0) {
+        td_points.innerHTML = score.toString() + " pts";
+      } else {
+        td_points.innerHTML = "-";
+      }
+      tr.appendChild(td_points);
+      ranklist.appendChild(tr);
     }
+
 }
     </script>
    </body>

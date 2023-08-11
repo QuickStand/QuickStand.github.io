@@ -184,23 +184,43 @@ function compare_rankings(a,b) {
 }
 
 // returning the sorted list of the total scores of all players
+// each element of the list contains
+// 0. the player name
+// 1. the player total score
+// 2. the player rank (might not be the list index because of ties)
 function rank_all_players() {
     const players = get_players();
     var rankings = [];
     for (const player of players) {
         var score = total_score(player);
-        rankings.push([player,score]);
+        rankings.push([player,score,0]);
     }
-    return rankings.sort(compare_rankings);
+    rankings = rankings.sort(compare_rankings);
+    // adding the ranks and handling the ties
+    var previous_score = -1; // score of the previous player
+    var current_rank = 0;
+    var next_rank = 1; // next rank if the score is different
+    for (player of rankings) {
+        if (player[1] == previous_score) {
+            player[2] = current_rank;
+            next_rank = next_rank + 1;
+        }
+        else {
+            player[2] = next_rank;
+            previous_score = player[1];
+            current_rank = next_rank;
+            next_rank = current_rank + 1;
+        }
+    }
+    return rankings;
 }
 
 // getting the rank of a player
 function get_rank(player_name) {
     const rankings = rank_all_players();
-    for (var i=0; i<rankings.length; i++) {
-        ps = rankings[i];
-        if (ps[0] == player_name) {
-            return (i+1).toString();
+    for (player of rankings) {
+        if (player[0] == player_name) {
+            return (player[2]).toString();
         }
     }
     return "None";
