@@ -349,6 +349,8 @@ const profiles = {
     },
     "Lithlad":{
         "country":["FR"],
+        "quote":"C'est brouillon mais ça passe. ",
+		"startgg":"4e88c9f0",
     },
     "Fardec":{
         "country":["FR"],
@@ -411,6 +413,8 @@ const profiles = {
     },
     "MetalBrasier":{
         "country":["FR"],
+        "quote":"oraindik bizirik nago, mutil",
+		"startgg":"dde1c25e",
     },
     "Mwouisman":{
         "country":["FR"],
@@ -450,6 +454,8 @@ const profiles = {
     },
     "TKO":{
         "country":["FR"],
+        "quote":"Stand strong, the show has just begun",
+		"startgg":"6a7fdbe0",
     },
     "Hilight":{
         "country":["FR"],
@@ -461,6 +467,8 @@ const profiles = {
     },
     "Raven":{
         "country":["FR"],
+        "quote":"Patate !",
+		"startgg":"4d535709",
     },
     "Rufio":{
         "country":["FR"],
@@ -708,5 +716,10 @@ const profiles = {
     "JOJOMASTERS":{
 		"country":["FR"],
 		"startgg":"928d2478",
+	},
+    "k":{
+		"country":["FR"],
+		"quote":"No Kick",
+		"startgg":"13c5325b",
 	},
 }
