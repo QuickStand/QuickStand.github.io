@@ -86,9 +86,11 @@ function draw_list(mode) {
       const rank = player[2];
       let tr = document.createElement("tr");
       tr.setAttribute("id",rank.toString())
-      let td_rank = document.createElement("td");
-      td_rank.innerHTML = rank.toString();
-      tr.appendChild(td_rank);
+      if (mode !== "team") { // not displaying rank for team mode
+        let td_rank = document.createElement("td");
+        td_rank.innerHTML = rank.toString();
+        tr.appendChild(td_rank);
+      }
       let td_country = document.createElement("td");
       td_country.innerHTML = player_flags(name.toString());
       tr.appendChild(td_country);
@@ -103,6 +105,11 @@ function draw_list(mode) {
           td_points.innerHTML = "-";
         }
         tr.appendChild(td_points);
+      }
+      if (mode == "team") { // displaying team medals for team mode
+        let td_medals = document.createElement("td");
+        td_medals.innerHTML = print_medals(score);
+        tr.appendChild(td_medals);
       }
       ranklist.appendChild(tr);
     }

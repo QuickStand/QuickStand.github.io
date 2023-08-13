@@ -125,14 +125,23 @@ function has_medals(medals) {
     return (medals[0] != 0 || medals[1] != 0 || medals[2] != 0);
 }
 
+// creating a string of emojis for medals
+function print_medals(medals) {
+    var str = "";
+    for (var i=0; i<medals[0]; i++) { str += "🥇"; }
+    for (var i=0; i<medals[1]; i++) { str += "🥈"; } 
+    for (var i=0; i<medals[2]; i++) { str += "🥉"; }
+    return str;
+}
+
 // compare two sets of medal: lexicographic order
 function compare_medals(m1, m2) {
-    if (m1[0] > m2[0]) { return 1; }
-    if (m2[0] > m1[0]) { return -1; }
-    if (m1[1] > m2[1]) { return 1; }
-    if (m2[1] > m1[1]) { return -1; }
-    if (m1[2] > m2[2]) { return 1; }
-    if (m2[2] > m1[2]) { return -1; }
+    if (m1[0] > m2[0]) { return -1; }
+    if (m2[0] > m1[0]) { return 1; }
+    if (m1[1] > m2[1]) { return -1; }
+    if (m2[1] > m1[1]) { return 1; }
+    if (m1[2] > m2[2]) { return -1; }
+    if (m2[2] > m1[2]) { return 1; }
     return 0;
 }
 
@@ -222,13 +231,6 @@ function get_players_with_profile() {
     return new Set(Object.keys(profiles));
 }
 
-// comparing the total score of two players
-function compare_rankings(a,b) {
-    if (a[1] > b[1]) {        
-        return -1;
-    }
-    return 1;
-}
 
 // returning the sorted list of the total scores of all players
 // each element of the list contains
@@ -239,10 +241,19 @@ function rank_all_players(mode) {
     const players = get_players(mode);
     var rankings = [];
     for (const player of players) {
-        var score = total_score(player,mode);
+        var score = null;
+        if (mode == "team") {
+            score = team_medals(player);
+        } else {
+            score = total_score(player,mode);
+        }
         rankings.push([player,score,0]);
     }
-    rankings = rankings.sort(compare_rankings);
+    if (mode == "team") {
+        rankings = rankings.sort((a,b) => compare_medals(a[1],b[1]));
+    } else {
+        rankings = rankings.sort((a,b) => b[1] - a[1]);
+    }
     // adding the ranks and handling the ties
     var previous_score = -1; // score of the previous player
     var current_rank = 0;

@@ -40,6 +40,7 @@
             <h2 id="p_ranking" class="left"></h2>
             <h2 id="p_total" class="right"></h2>
         </p>
+        <p><span id="medals"></span></p>
 
         <h2 id="t_achievements"></h2>
         <table class="center">
@@ -54,7 +55,6 @@
         </table>
 
         <h2 id="t_nonranked"></h2>
-        <p><span id="medals"></span></p>
         <table class="center">
             <tbody id="p_nonranked">
             </tbody>
@@ -144,9 +144,7 @@ function draw_player(player_name) {
     const medals = team_medals(player_name);
     if (has_medals(medals)) {
         s_medals.innerHTML = "<b>Team medals: </b>";
-        for (var i=0; i<medals[0]; i++) { s_medals.innerHTML += "🥇"; }
-        for (var i=0; i<medals[1]; i++) { s_medals.innerHTML += "🥈"; }
-        for (var i=0; i<medals[2]; i++) { s_medals.innerHTML += "🥉"; }
+        s_medals.innerHTML += print_medals(medals);;
     }
 
     // drawing total score
