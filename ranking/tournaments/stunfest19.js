@@ -50,11 +50,11 @@ const stunfest19 = {
         "Boss":"1",
         "Genki":"1",
         "Tominaga":"1",
-        "Coccis":"2",
-        "MounB":"2",
-        "Nighty":"2",
-        "Otana":"3",
-        "MLK":"3",
-        "Niabanh":"3"
+        "YaZ":"2",
+        "Mymoza":"2",
+        "Nikola":"2",
+        "Coccis":"3",
+        "MounB":"3",
+        "Nighty":"3",
     }
 };
