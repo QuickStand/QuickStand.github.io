@@ -2,8 +2,28 @@
 // all tournaments
 // ordered from most recent to oldest
 const tournaments = [hfs23, mixup22, hfs22, stunfest22, judgement2, pbn3, hfsreborn, judgement1, saf19, hfs19, stunfest19, p2p, pbn2, hfs18, pax18, pbn1, hfs17, kots2, kots1];
-
 const nonranked_tournaments = [basf21, stunfest18, stunfest16, stunfest15, stunfest14];
+const all_tournaments = tournaments.concat(nonranked_tournaments);
+
+// filter tournaments based on the following possible modes
+// - solo -> to get the solo rankings, consider every possible tournament (even nonranked)
+// - team -> only get the tournaments with team results
+// - 2019 (or any other year) -> only tournments for that given year
+function get_tournaments(mode) {
+    if (mode == "solo") { return all_tournaments; }
+    if (mode == "team") { return all_tournaments.filter((tnmt) => tnmt["team_results"] != null); }
+    return all_tournaments.filter((tnmt) => Number(tnmt["year"]) == Number(mode));
+}
+
+// returns the set of all years where we have some SOLO tournament results
+function all_years() {
+    var years = new Set();
+    for (const tnmt of tournaments) {
+        years.add(tnmt["year"]);
+    }
+    return Array.from(years).sort((a,b) => Number(b) - Number(a));
+}
+
 
 // non year-adjusted score of a player at a tournament
 function base_score_player_tournament (player_name, tournament) {
@@ -22,6 +42,9 @@ function base_score_player_tournament (player_name, tournament) {
     }
     else if (tournament["type"] == "single") {
         points = single_points;
+    }
+    else if (tournament["type"] == "nonranked") {
+        return 0;
     }
     else {
         console.log ("Unknown tournament type");
@@ -66,12 +89,15 @@ function compare_results(a,b) {
 // finds all score, accross all tournaments, of a player
 // each score is associated with the corresponding tournament
 // the final list is sorted
-function all_scores (player_name) {
+function all_scores (player_name, mode) {
     var results = [];
-    for (const tnmt of tournaments) {
-        const score = adjusted_score_player_tournament(player_name,tnmt);
-        if (score > 0) {
-            results.push([score,tnmt]); // adding the results
+    const mode_tournaments = get_tournaments(mode);
+    for (const tnmt of mode_tournaments) {
+        if (tnmt["results"] != null) {
+            const score = adjusted_score_player_tournament(player_name,tnmt);
+            if (score > 0) {
+                results.push([score,tnmt]); // adding the results
+            }
         }
     }
     return results.sort(compare_results);
@@ -81,18 +107,8 @@ function all_scores (player_name) {
 // gold medals at index 0 and so on
 function team_medals (player_name) {
     var medals = [0,0,0];
-    // ranked tournaments
-    for (const tnmt of tournaments) {
-        const team_results = tnmt["team_results"];
-        if (team_results != null) {
-            const rank = team_results[player_name];
-            if (rank != null & rank <=3) {
-                medals[rank-1] = medals[rank-1] + 1;;
-            }
-        }
-    }
-    // non-ranked tournaments
-    for (const tnmt of nonranked_tournaments) {
+    // looking at all tournaments
+    for (const tnmt of get_tournaments("team")) {
         const team_results = tnmt["team_results"];
         if (team_results != null) {
             const rank = team_results[player_name];
@@ -107,6 +123,17 @@ function team_medals (player_name) {
 // just checks that there are some medals to display
 function has_medals(medals) {
     return (medals[0] != 0 || medals[1] != 0 || medals[2] != 0);
+}
+
+// compare two sets of medal: lexicographic order
+function compare_medals(m1, m2) {
+    if (m1[0] > m2[0]) { return 1; }
+    if (m2[0] > m1[0]) { return -1; }
+    if (m1[1] > m2[1]) { return 1; }
+    if (m2[1] > m1[1]) { return -1; }
+    if (m1[2] > m2[2]) { return 1; }
+    if (m2[2] > m1[2]) { return -1; }
+    return 0;
 }
 
 // comparing nonranked results: best rank first
@@ -151,8 +178,8 @@ function nonranked_scores (player_name) {
 
 // total score of a player accross all tournaments
 // with weihgted results
-function total_score (player_name) {
-    const results = all_scores (player_name);
+function total_score (player_name, mode) {
+    const results = all_scores (player_name, mode);
     var total = 0;
     for (var i=0; i<best_results; i++) {
         if (results[i] != null) {
@@ -164,28 +191,16 @@ function total_score (player_name) {
 
 
 // getting all players that ever got a rank in a tournament
-function get_players () {
+function get_players (mode) {
     var players = new Set();
-    // ranked tournaments
-    for (const tnmt of tournaments) {
+    var mode_tournaments = get_tournaments(mode);
+    // for each tournaments
+    for (const tnmt of mode_tournaments) {
         // solo
         var results = tnmt["results"];
-        for (const [player, rank] of Object.entries(results)) {
-            players.add(player);
-        }
-        // team
-        var team_results = tnmt["team_results"];
-        if (team_results != null) {
-            for (const [player,rank] of Object.entries(team_results)) {
-                players.add(player);
-            }
-        }
-    }
-    // nonranked tournaments
-    for (const tnmt of nonranked_tournaments) {
-        // solo
-        var results = tnmt["results"];
-        if (results != null) {
+        if (results != null && mode !== "team") { 
+            // for the team rankings, we only want to see players with medals
+            // while for solo rankings, we can display everyone
             for (const [player, rank] of Object.entries(results)) {
                 players.add(player);
             }
@@ -220,11 +235,11 @@ function compare_rankings(a,b) {
 // 0. the player name
 // 1. the player total score
 // 2. the player rank (might not be the list index because of ties)
-function rank_all_players() {
-    const players = get_players();
+function rank_all_players(mode) {
+    const players = get_players(mode);
     var rankings = [];
     for (const player of players) {
-        var score = total_score(player);
+        var score = total_score(player,mode);
         rankings.push([player,score,0]);
     }
     rankings = rankings.sort(compare_rankings);
@@ -247,9 +262,9 @@ function rank_all_players() {
     return rankings;
 }
 
-// getting the rank of a player
+// getting the solo rank of a player
 function get_rank(player_name) {
-    const rankings = rank_all_players();
+    const rankings = rank_all_players("solo");
     for (player of rankings) {
         if (player[0] == player_name) {
             return (player[2]).toString();

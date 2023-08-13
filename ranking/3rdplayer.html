@@ -67,7 +67,7 @@
 function draw_player(player_name) {
     const p_name = document.getElementById("p_name");
     p_name.innerHTML = player_flags(player_name) + player_name;
-    const score = all_scores(player_name);
+    const score = all_scores(player_name,"solo");
     // drawing the achievement list
     if (score.length > 0) {
         t_achievements = document.getElementById("t_achievements");
@@ -151,7 +151,7 @@ function draw_player(player_name) {
 
     // drawing total score
     p_total = document.getElementById("p_total");
-    p_total.innerHTML = "Total Score: " + total_score(player_name).toString() + " pts";
+    p_total.innerHTML = "Total Score: " + total_score(player_name,"solo").toString() + " pts";
     // drawng total ranking
     p_ranking = document.getElementById("p_ranking");
     const rank = get_rank(player_name);

@@ -52,7 +52,7 @@ function draw_player_layout(player_name) {
     const p_name = document.getElementById("name");
     // name
     p_name.innerHTML = player_flags(player_name) + player_name;
-    const score = all_scores(player_name);
+    const score = all_scores(player_name,"solo");
     // drawing the achievement list
     if (score.length > 0) {
         results = document.getElementById("results");

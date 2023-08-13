@@ -98,6 +98,32 @@ td a[href]{
     text-decoration: none;
 }
 
+/* Selector */
+
+select {
+    margin:auto;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    text-align:center;
+    width: 20em;
+    height: 3em;
+    padding: 0 1em 0 1em;
+    color: #bbbbbb;
+    background-color: #101010;
+    border-radius: 0.25em;
+    cursor: pointer;
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+}
+  
 /* Navigation Header */
 nav {
     width: 900px;

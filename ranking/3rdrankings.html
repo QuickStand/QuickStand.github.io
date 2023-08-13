@@ -29,7 +29,7 @@
      <script type="text/javascript" src="player_profiles.js"></script>
     <script type="text/javascript" src="ranking.js"></script>
    </head>
-   <body onload="draw_list()">
+   <body onload="fill_mode_selector(); draw_list('solo')">
 
     <nav id="header">
       <p><a href="../index.html"><img 
@@ -40,6 +40,13 @@
         <h2 class="right"><a href="3rdabout.html">About</a></h2>        
     </nav>
 
+    <div align="center">
+    <select name="mode" id="mode_select" onInput="clear_list(); draw_list(this.value)">
+      <option value="solo">Solo Rankings</option>
+      <option value="team">Team Rankings</option>
+    </select>
+    </div>
+
     <div id="card">
       <table class="center">
         <tbody id="rankings">
@@ -48,10 +55,31 @@
      </div>
 
      <script>
+
+      
+
+// add year options to the selector
+function fill_mode_selector() {
+  const select = document.getElementById("mode_select");
+  for (year of all_years()) {
+    var opt = document.createElement('option');
+    opt.value = year;
+    opt.innerHTML = year + " Rankings";
+    select.appendChild(opt);
+  }
+  return 0;
+}
+
+// clears the list when switching mode
+function clear_list () {
+  const ranking = document.getElementById("rankings");
+  ranking.innerHTML = "";
+}
+
 // drawing the full ranking list
-function draw_list() {
+function draw_list(mode) {
     const ranklist = document.getElementById("rankings");
-    const rankings = rank_all_players();
+    const rankings = rank_all_players(mode);
     for (player of rankings) {
       const name = player[0];
       const score = player[1];
@@ -68,12 +96,14 @@ function draw_list() {
       td_name.innerHTML = player_link(name.toString());
       tr.appendChild(td_name);
       let td_points = document.createElement("td");
-      if (score != 0) {
-        td_points.innerHTML = score.toString() + " pts";
-      } else {
-        td_points.innerHTML = "-";
+      if (mode == "solo") { // displaying points only for the solo full ranking
+        if (score != 0) {
+          td_points.innerHTML = score.toString() + " pts";
+        } else {
+          td_points.innerHTML = "-";
+        }
+        tr.appendChild(td_points);
       }
-      tr.appendChild(td_points);
       ranklist.appendChild(tr);
     }
 
