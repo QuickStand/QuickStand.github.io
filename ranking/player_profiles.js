@@ -76,7 +76,8 @@ const profiles = {
 		"country":["JP"],
 	},
     "ChiRithy": {
-        "country":["CA"]
+        "country":["CA"],
+        "startgg":"3730695a",
     },
     "PTS1": {
         "country":["CA"]
@@ -88,7 +89,9 @@ const profiles = {
         "country":["CA"],
     },
     "Makaveli": {
-        "country":["CH"]
+        "country":["CH"],
+        "quote":"Watches, banks, cheese, chocolate, and 1 Gouki.",
+		"startgg":"bb0896be",
     },
     "Captain Honest":{
 		"country":["CH"],
@@ -721,5 +724,10 @@ const profiles = {
 		"country":["FR"],
 		"quote":"No Kick",
 		"startgg":"13c5325b",
+	},
+    "Foo":{
+		"country":["FR"],
+		"quote":"J'ai jamais gagné un match, excepté une fois au chalet.",
+		"startgg":"ee242d20",
 	},
 }
