@@ -75,6 +75,10 @@ const profiles = {
 	"Yomoda":{
 		"country":["JP"],
 	},
+    "Taihei":{
+		"country":["JP"],
+		"quote":"Next Week!",
+	},
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
@@ -97,6 +101,11 @@ const profiles = {
 		"country":["CH"],
 		"quote":"Il n'y a pas le feu au lac ",
 		"startgg":"9733c30a",
+	},
+    "Ghaust":{
+		"country":["CH"],
+		"quote":"Comment on joue arcade 😂",
+		"startgg":"70c81ae8",
 	},
     "Z3rog":{
         "country":["SE","DE"],
@@ -126,6 +135,11 @@ const profiles = {
 		"country":["SE"],
 		"quote":"You play to win the game.",
 		"startgg":"115488eb",
+	},
+    "Oslo":{
+		"country":["SE"],
+		"quote":"Pick a top tier.- Sanford Kelly",
+		"startgg":"e7cbbe40",
 	},
     "Cactu":{
         "country":["GB"],
@@ -174,6 +188,11 @@ const profiles = {
 		"country":["GB"],
 		"quote":"LIVIN' LA VIDA LOW TIER!",
 		"startgg":"3113241e",
+	},
+    "Jazzerino":{
+		"country":["GB"],
+		"quote":"Dont get gripsed",
+		"startgg":"918090b6",
 	},
     "Klaww":{
         "country":["IT"],
@@ -228,7 +247,18 @@ const profiles = {
     },
     "Nindo":{
         "country":["NL"],
+        "quote":"Way of the ninja",
+		"startgg":"c25d755c",
     },
+    "AQH":{
+		"country":["NL"],
+		"quote":"Ik weet wannneer jouw knop drukt, mattie.",
+		"startgg":"0d95d754",
+	},
+    "Nosferatu":{
+		"country":["NL"],
+		"startgg":"d7ee6529",
+	},
     "Mikazuki":{
 		"country":["BG"],
 		"quote":"Red Block Buster Winner",
@@ -249,6 +279,10 @@ const profiles = {
     "Cartola":{
 		"country":["ES"],
 		"startgg":"8ee430cb",
+	},
+    "Dioxin":{
+		"country":["AE"],
+		"startgg":"277e082c",
 	},
     "Otana":{
         "country":["FR"],
@@ -531,6 +565,9 @@ const profiles = {
     },
     "Neithan":{
         "country":["FR"],
+        "quote":"Ce ryu mon gars",
+		"startgg":"a8791beb",
+
     },
     "MPropre":{
         "country":["FR"],
