@@ -1,7 +1,7 @@
 const profiles = {
     "Aurèle":{
         "country":["FR","CH"],
-        "quote":"Arrêtez d'essayer de me corrompre. Si vous voulez des points dans la liste, venez les mériter au TSB!",
+        "quote":"Arrêtez d'essayer de me corrompre.",
         "startgg":"f2a4ac27",
     },
     "PtitLee":{
@@ -16,7 +16,8 @@ const profiles = {
     },
     "Niabanh":{
         "country":["FR"],
-        "quote":"Joue avec ton cœur!"
+        "quote":"Joue avec ton cœur!",
+        "startgg":"8b5185fe",
     },
     "Hayao": {
         "country":["JP"]
@@ -84,7 +85,8 @@ const profiles = {
         "startgg":"3730695a",
     },
     "PTS1": {
-        "country":["CA"]
+        "country":["CA"],
+        "startgg":"2ca48176",
     },
     "KyoKuji": {
         "country":["CA"]
@@ -92,6 +94,11 @@ const profiles = {
     "Psychochronic":{
         "country":["CA"],
     },
+    "Jonas":{
+        "country":["CA"],
+		"quote":"A la recherche du respect!!!",
+		"startgg":"0db32e6f",
+	},
     "Makaveli": {
         "country":["CH"],
         "quote":"Watches, banks, cheese, chocolate, and 1 Gouki.",
@@ -153,15 +160,21 @@ const profiles = {
 	},
     "3J":{
         "country":["GB"],
+        "quote":"Hayate, tsurugi, orochi, fukiage, karakusa; these are my weapons that will seal your fate! ",
+		"startgg":"ce79f544",
     },
     "Azz":{
         "country":["GB"],
+        "quote":"Lunch break, special herbs, fries and a sammich. Unleashed on the city, maximize damage",
+		"startgg":"acd6b871",
     },
     "Farhann":{
         "country":["GB"],
     },
     "ShinGeorge":{
         "country":["GB"],
+        "quote":"I have no idea what I'm doing",
+		"startgg":"ee7c8cf6",
     },
     "Scotty2salty":{
         "country":["GB"],
@@ -193,6 +206,11 @@ const profiles = {
 		"country":["GB"],
 		"quote":"Dont get gripsed",
 		"startgg":"918090b6",
+	},
+    "Yekrats":{
+		"country":["GB"],
+		"quote":"Whiff Tachi and a Dream..",
+		"startgg":"4c873059",
 	},
     "Klaww":{
         "country":["IT"],
@@ -313,6 +331,7 @@ const profiles = {
     },
     "Massi":{
         "country":["FR"],
+        "startgg":"246a0b3b",
     },
     "Nikola":{
         "country":["FR"],
@@ -321,12 +340,18 @@ const profiles = {
     },
     "Farouk":{
         "country":["FR"],
+        "quote":"?? ???? ?????",
+		"startgg":"b18ddf58",
     },
     "Daolicious":{
         "country":["FR"],
+        "quote":"Siuuuuuuuuuuu",
+		"startgg":"2fd17b13",
     },
     "Kiji":{
         "country":["FR"],
+        "quote":"لا تكن مجنونا",
+		"startgg":"d524cd97",
     },
     "MounB":{
         "country":["FR","JP"],
@@ -348,6 +373,8 @@ const profiles = {
     },
     "Dobodry":{
         "country":["FR"],
+        "quote":"J'aurais dû gagner le contest",
+		"startgg":"d3b2a20f",
     },
     "Lynohaz":{
         "country":["FR"],
@@ -420,6 +447,7 @@ const profiles = {
     },
     "Floodman":{
         "country":["FR"],
+        "startgg":"f8760bd8",
     },
     "Arq":{
         "country":["FR"],
@@ -434,7 +462,8 @@ const profiles = {
     },
     "Livid":{
         "country":["FR"],
-        "quote":"♪",
+        "quote":"♪ - Haute vertu, basse vertu, etc",
+        "startgg":"e69ce980",
     },
     "ChapeauRéglisse":{
         "country":["FR"],
@@ -479,6 +508,8 @@ const profiles = {
     },
     "Virus":{
         "country":["FR"],
+        "quote":"Royal au bar",
+		"startgg":"e8f6f59d",
     },
     "Rapeurtugais":{
         "country":["FR"],
@@ -526,6 +557,8 @@ const profiles = {
     },
     "Keizaal":{
         "country":["FR"],
+        "quote":"Gwelloc'h eo lazhañ ar bleiz evit bezañ lazhet gantañ.",
+		"startgg":"6718d136",
     },
     "Mitch":{
         "country":["FR"],
@@ -628,6 +661,8 @@ const profiles = {
     },
     "Gweilo":{
         "country":["FR"],
+        "quote":"Protect Trans Lives !",
+		"startgg":"a98bbf13",
     },
     "Onigiri":{
         "country":["FR"],
@@ -767,4 +802,37 @@ const profiles = {
 		"quote":"J'ai jamais gagné un match, excepté une fois au chalet.",
 		"startgg":"ee242d20",
 	},
-}
+    "HikenNoGief":{
+		"country":["FR"],
+		"quote":"Un jour un Garou street battle a Lyon",
+		"startgg":"63f43b96",
+	},
+    "TobyAbare":{
+		"country":["FR"],
+		"quote":"C'est comment pour tenraiha avec makoto ?",
+		"startgg":"a6e58561",
+	},
+    "Tentacules":{
+		"country":["FR"],
+		"startgg":"085d80b1",
+	},
+    "TheFunkyweapon":{
+		"country":["FR"],
+		"quote":"je cherche mon rythme , mais fini surtout ko ",
+		"startgg":"58f6a701",
+	},
+    "Quenshi":{
+		"country":["FR"],
+		"quote":"Ewi !",
+		"startgg":"9e6b46b0",
+	},
+    "ManyManon":{
+		"country":["FR"],
+		"startgg":"9801b3bc",
+	},
+    "Bansheebot":{
+		"country":["FR"],
+		"quote":"Zabel c'est un peu comme chun li mais avec un imblocable",
+		"startgg":"f28d98c7",
+	},
+    }
