@@ -281,16 +281,16 @@ const profiles = {
 		"country":["BG"],
 		"quote":"Red Block Buster Winner",
 	},
-    "rokich":{
+    "Rokich":{
 		"country":["BG"],
 		"startgg":"f6edc394",
 	},
-	"shadyAF":{
+	"ShadyAF":{
 		"country":["BG"],
 		"quote":"Lud li si? ",
 		"startgg":"588a82ef",
 	},
-    "ca1Nne":{
+    "Ca1Nne":{
 		"country":["BG"],
 		"startgg":"c474a000",
 	},
@@ -361,6 +361,7 @@ const profiles = {
     },
     "Jehan":{
         "country":["FR"],
+        "startgg":"9935685e",
     },
     "Pingouin":{
         "country":["FR"],
@@ -399,6 +400,7 @@ const profiles = {
     "Sikaryu":{
         "country":["FR"],
         "quote":"Je parle avec mes points 😁👍🏾",
+        "startgg":"01a106fc",
     },
     "Jason":{
         "country":["FR"],
@@ -788,7 +790,7 @@ const profiles = {
 		"quote":"PdM",
 		"startgg":"3b2b57aa",
 	},
-    "JOJOMASTERS":{
+    "Jojomasters":{
 		"country":["FR"],
 		"startgg":"928d2478",
 	},
@@ -834,5 +836,19 @@ const profiles = {
 		"country":["FR"],
 		"quote":"Zabel c'est un peu comme chun li mais avec un imblocable",
 		"startgg":"f28d98c7",
+	},
+    "Pandougui":{
+		"country":["FR"],
+		"quote":"",
+		"startgg":"81d4d9a5",
+	},
+    "Zouzou":{
+		"country":["FR"],
+		"quote":"pépère le chaaat",
+	},
+    "orochikem":{
+		"country":["FR"],
+		"quote":"La justice!!!",
+		"startgg":"4664ba9b",
 	},
     }
