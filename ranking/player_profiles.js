@@ -850,5 +850,14 @@ const profiles = {
 		"country":["FR"],
 		"quote":"La justice!!!",
 		"startgg":"4664ba9b",
-	},
+    },
+    "Eldready":{
+		"country":["FR"],
+    },
+    "Parpaing":{
+		"country":["FR"],
+    },
+    "Jirolondon":{
+		"country":["FR"],
+    },
     }
