@@ -80,6 +80,12 @@ const profiles = {
 		"country":["JP"],
 		"quote":"Next Week!",
 	},
+    "PierrotLucifer":{
+		"country":["JP"],
+	},
+    "Sugiyama":{
+		"country":["JP"],
+	},
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
