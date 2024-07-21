@@ -120,6 +120,12 @@ const profiles = {
 		"quote":"Comment on joue arcade 😂",
 		"startgg":"70c81ae8",
 	},
+    "Calimero4055":{
+		"country":["CH"],
+    },
+    "Motivated!":{
+		"country":["CH"],
+    },
     "Z3rog":{
         "country":["SE","DE"],
         "quote":"知己知彼 百战不殆",
@@ -218,6 +224,12 @@ const profiles = {
 		"quote":"Whiff Tachi and a Dream..",
 		"startgg":"4c873059",
 	},
+    "Bagel":{
+		"country":["GB"],
+    },
+    "GoldmanJaqs":{
+		"country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
         "quote":"Give us the damn mona lisa back",
@@ -800,7 +812,7 @@ const profiles = {
 		"country":["FR"],
 		"startgg":"928d2478",
 	},
-    "k":{
+    "K":{
 		"country":["FR"],
 		"quote":"No Kick",
 		"startgg":"13c5325b",
@@ -864,6 +876,21 @@ const profiles = {
 		"country":["FR"],
     },
     "Jirolondon":{
+		"country":["FR"],
+    },
+    "Orochikem":{
+		"country":["FR"],
+    },
+    "Shield":{
+		"country":["FR"],
+    },
+    "MagicRider":{
+		"country":["FR"],
+    },
+    "Bonnet":{
+		"country":["FR"],
+    },
+    "Jujumag2x":{
 		"country":["FR"],
     },
     }

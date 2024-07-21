@@ -129,3 +129,34 @@ const basf21 = {
         "Zarghatt":"17"
     }
 };
+
+const mixup24 = {
+    "name":"The Mixup 2024",
+    "shortname":"mixup24",
+    "bracket":"https://www.start.gg/tournament/the-mixup-2024-round-6/event/street-fighter-iii-3rd-strike/brackets/1577439/2363969",
+    "vod":"https://www.youtube.com/watch?v=mKGq9SZqFTw",
+    "org":["LaDose.NET"],
+    "org_link":["https://www.ladose.net/"],
+    "type":"nonranked",
+    "year":"2024",
+    "month":"July",
+    "results":
+    {
+        "YaZ":"1",
+        "VileIsland":"2",
+        "K":"3",
+        "Orochikem":"4",
+        "Bagel":"5",
+        "Gabou":"5",
+        "Isimorn":"7",
+        "Calimero4055":"7",
+        "Shield":"9",
+        "NuclearLunch":"9",
+        "GoldmanJaqs":"9",
+        "MagicRider":"9",
+        "Rex":"13",
+        "Bonnet":"13",
+        "Motivated!":"13",
+        "Jujumag2x":"13"
+    }
+}
