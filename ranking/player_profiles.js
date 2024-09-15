@@ -251,6 +251,9 @@ const profiles = {
 		"country":["IT"],
 		"startgg":"95dd7b6e",
 	},
+    "Gillstolemyride":{
+		"country":["IT"],
+	},
     "Maurya":{
         "country":["US"],
     },
@@ -688,7 +691,7 @@ const profiles = {
         "country":["FR"],
     },
     "PaddyHacker":{
-        "country":["FR"],
+        "country":["GB"],
     },
     "Rafael":{
         "country":["FR"],
@@ -891,6 +894,21 @@ const profiles = {
 		"country":["FR"],
     },
     "Jujumag2x":{
+		"country":["FR"],
+    },
+    "Yamato":{
+		"country":["FR"],
+    },
+    "Frionel":{
+		"country":["FR"],
+    },
+    "Kareem":{
+		"country":["FR"],
+    },
+    "Lap1":{
+		"country":["FR"],
+    },
+    "Phalel":{
 		"country":["FR"],
     },
     }
