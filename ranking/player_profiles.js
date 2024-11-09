@@ -86,6 +86,12 @@ const profiles = {
     "Sugiyama":{
 		"country":["JP"],
 	},
+    "Mimora":{
+		"country":["JP"],
+	},
+    "TM":{
+		"country":["JP"],
+	},
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
@@ -230,6 +236,9 @@ const profiles = {
     "GoldmanJaqs":{
 		"country":["GB"],
     },
+    "Jewelbox":{
+		"country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
         "quote":"Give us the damn mona lisa back",
@@ -261,6 +270,15 @@ const profiles = {
         "country":["US"],
     },
     "Lance":{
+        "country":["US"],
+    },
+    "FrankieBFG":{
+        "country":["US"],
+    },
+    "Bubbles":{
+        "country":["US"],
+    },
+    "KyoShiro":{
         "country":["US"],
     },
     "JustinWong":{
