@@ -1,3 +1,18 @@
+// points given to each specific rank in a Super major tournament
+const super_major_points = {
+    "1":"178",
+    "2":"167",
+    "3":"158",
+    "4":"150",
+    "5":"136",
+    "7":"124",
+    "9":"104",
+    "13":"88",
+    "17":"64",
+    "25":"48",
+    "33":"32"
+}
+
 // points given to each specific rank in a major tournament
 const major_points = {
     "1":"162",

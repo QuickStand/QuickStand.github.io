@@ -40,6 +40,9 @@ function base_score_player_tournament (player_name, tournament) {
     else if (tournament["type"] == "major") {
         points = major_points;
     }
+    else if (tournament["type"] == "supermajor") {
+        points = super_major_points;
+    }
     else if (tournament["type"] == "single") {
         points = single_points;
     }
@@ -347,6 +350,7 @@ function ordinal (rank) {
 // printing the tournament type
 function type_to_string(type) {
     if (type == "major") { return "Major Tournament"; }
+    else if (type == "supermajor") { return "Super Major Tournament"; }
     else if (type == "minor") { return "Minor Tournament"; }
     else if (type == "single") { return "Single-Elimination Tournament"; }
     else if (type == "nonranked") { return "Non-ranked Tournament"; }

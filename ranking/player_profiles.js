@@ -929,4 +929,10 @@ const profiles = {
     "Phalel":{
 		"country":["FR"],
     },
+    "Baraki":{
+		"country":["FR"],
+    },
+    "Ninjardin":{
+		"country":["FR"],
+    },
     }

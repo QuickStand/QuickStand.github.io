@@ -7,7 +7,7 @@ const tsb24 = {
     "team_vod":"https://www.youtube.com/watch?v=VSUmgxNimXc",
     "org":["LaDose.NET","QuickStand"],
     "org_link":["https://www.ladose.net/","../index.html"],
-    "type":"major",
+    "type":"supermajor",
     "year":"2024",
     "month":"November",
     "results":
@@ -43,7 +43,23 @@ const tsb24 = {
         "Odasan":"25",
         "K":"25",
         "KyoShiro":"25",
-        "Fjaza":"25"
+        "Fjaza":"25",
+        "PtitLee":"33",
+        "Zyul":"33",
+        "Nindo":"33",
+        "VileIsland":"33",
+        "Aurèle":"33",
+        "RC":"33",
+        "Slim":"33",
+        "Baraki":"33",
+        "Quenshi":"33",
+        "Floodman":"33",
+        "Ninjardin":"33",
+        "ShinGeorge":"33",
+        "MetalBrasier":"33",
+        "Nikola":"33",
+        "Auber":"33",
+        "Kiji":"33"
     },
     "team_results":
     {

@@ -7,7 +7,7 @@ const tsb23 = {
     "team_vod":"https://www.youtube.com/watch?v=A5JAKSOodLI",
     "org":["LaDose.NET","QuickStand"],
     "org_link":["https://www.ladose.net/","../index.html"],
-    "type":"major",
+    "type":"supermajor",
     "year":"2023",
     "month":"November",
     "results":
@@ -43,7 +43,23 @@ const tsb23 = {
         "AQH":"25",
         "Kiji":"25",
         "PTS1":"25",
-        "Floodman":"25"
+        "Floodman":"25",
+        "PtitLee":"33",
+        "Arq":"33",
+        "ShadyAF":"33",
+        "MM2":"33",
+        "Auber":"33",
+        "Cactu":"33",
+        "Odasan":"33",
+        "MaxLeSac":"33",
+        "Studs":"33",
+        "TKO":"33",
+        "Oslo":"33",
+        "Dobodry":"33",
+        "Azz":"33",
+        "3J":"33",
+        "ShinGeorge":"33",
+        "Bansheebot":"33"
     },
     "team_results":
     {
