@@ -935,4 +935,16 @@ const profiles = {
     "Ninjardin":{
 		"country":["FR"],
     },
+    "Akva":{
+		"country":["FR"],
+    },
+    "Artvado":{
+		"country":["FR"],
+    },
+    "Vikage":{
+		"country":["FR"],
+    },
+    "Binouzator":{
+		"country":["FR"],
+    },
     }
