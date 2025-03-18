@@ -6,8 +6,8 @@ const judgement4 = {
     "org":["QuickStand"],
     "org_link":["../index.html"],
     "type":"major",
-    "vod":"",
-    "team_vod":"",
+    "vod":"https://www.youtube.com/watch?v=Pbqa8ZqFz2g",
+    "team_vod":"https://www.youtube.com/watch?v=RUoOgKCK39I",
     "year":"2025",
     "month":"March",
     "results":
