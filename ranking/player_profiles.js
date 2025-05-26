@@ -950,4 +950,10 @@ const profiles = {
     "Binouzator":{
 		"country":["FR"],
     },
+    "Razielle":{
+		"country":["FR"],
+    },
+    "Makyutan":{
+		"country":["FR"],
+    },
     }

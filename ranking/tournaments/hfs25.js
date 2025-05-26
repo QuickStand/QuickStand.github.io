@@ -35,7 +35,15 @@ const hfs25 = {
         "Daolicious":"17",
         "Indy":"17",
         "Lithlad":"17",
-        "RC":"17"
+        "RC":"17",
+        "MaxLeSac":"25",
+        "Razielle":"25",
+        "Baraki":"25",
+        "Rockar":"25",
+        "Arq":"25",
+        "Isimorn":"25",
+        "Aurèle":"25",
+        "Makyutan":"25"
     },
     "team_results":
     {
