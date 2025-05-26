@@ -137,6 +137,9 @@ const profiles = {
         "quote":"知己知彼 百战不殆",
 		"startgg":"db0c5fbe",
     },
+    "P-Drum":{
+        "country":["SE","DE"],
+    },
     "Fjaza":{
         "country":["SE"],
         "quote":"Let Me Denjin Your Life",
