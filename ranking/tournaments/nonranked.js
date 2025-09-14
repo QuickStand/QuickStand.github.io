@@ -159,4 +159,31 @@ const mixup24 = {
         "Motivated!":"13",
         "Jujumag2x":"13"
     }
+};
+
+const mixup25 = {
+    "name":"The Mixup 2025",
+    "shortname":"mixup25",
+    "bracket":"https://www.start.gg/tournament/the-mixup-2025-round-7/event/community-event-street-fighter-iii-3rd-strike",
+    "vod":"https://www.youtube.com/watch?v=67-H60NwkhM",
+    "org":["LaDose.NET"],
+    "org_link":["https://www.ladose.net/"],
+    "type":"nonranked",
+    "year":"2025",
+    "month":"July",
+    "results":
+    {
+        "YaZ":"1",
+        "Lithlad":"2",
+        "DonYann":"3",
+        "Gabou":"4",
+        "Motivated!":"5",
+        "Bonnet":"5",
+        "YetAnotherAstrid":"7",
+        "Bagel":"7",
+        "Likiminaj":"9",
+        "SayaZian":"9",
+        "JeeLoo":"9",
+        "Bowli":"9",
+    }
 }

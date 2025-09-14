@@ -132,6 +132,9 @@ const profiles = {
     "Motivated!":{
 		"country":["CH"],
     },
+    "Bowli":{
+		"country":["CH"],
+    },
     "Z3rog":{
         "country":["SE","DE"],
         "quote":"知己知彼 百战不殆",
@@ -282,6 +285,9 @@ const profiles = {
         "country":["US"],
     },
     "KyoShiro":{
+        "country":["US"],
+    },
+    "YetAnotherAstrid":{
         "country":["US"],
     },
     "JustinWong":{
@@ -978,6 +984,12 @@ const profiles = {
 		"country":["FR"],
     },
     "SoMasta":{
+		"country":["FR"],
+    },
+    "Likiminaj":{
+		"country":["FR"],
+    },
+    "JeeLoo":{
 		"country":["FR"],
     },
     }
