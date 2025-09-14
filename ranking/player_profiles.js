@@ -956,4 +956,19 @@ const profiles = {
     "Makyutan":{
 		"country":["FR"],
     },
+    "LéoDeParis":{
+		"country":["FR"],
+    },
+    "WonderBoite":{
+		"country":["FR"],
+    },
+    "Tuxo":{
+		"country":["FR"],
+    },
+    "Ibuprofene":{
+		"country":["FR"],
+    },
+    "Brown":{
+		"country":["FR"],
+    },
     }
