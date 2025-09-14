@@ -299,6 +299,9 @@ const profiles = {
     "Tichoune":{
         "country":["BE"],
     },
+    "Vermeers":{
+        "country":["BE"],
+    },
     "Bossomat":{
         "country":["DE"],
     },
@@ -319,6 +322,9 @@ const profiles = {
 		"country":["NL"],
 		"startgg":"d7ee6529",
 	},
+    "SeldomSadSam":{
+        "country":["NL"],
+    },
     "Mikazuki":{
 		"country":["BG"],
 		"quote":"Red Block Buster Winner",
@@ -969,6 +975,9 @@ const profiles = {
 		"country":["FR"],
     },
     "Brown":{
+		"country":["FR"],
+    },
+    "SoMasta":{
 		"country":["FR"],
     },
     }

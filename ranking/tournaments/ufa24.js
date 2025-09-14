@@ -36,6 +36,14 @@ const ufa24 = {
         "Lithlad":"17",
         "Rockar":"17",
         "Zouzou":"17",
+        "Azerty":"25",
+        "SeldomSadSam":"25",
+        "DoubleU":"25",
+        "Vermeers":"25",
+        "Razielle":"25",
+        "Ibuprofene":"25",
+        "SoMasta":"25",
+        "Heavy":"25",
     },
     "team_results":
     {
