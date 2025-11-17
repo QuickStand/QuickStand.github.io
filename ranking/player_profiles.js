@@ -92,6 +92,9 @@ const profiles = {
     "TM":{
 		"country":["JP"],
 	},
+    "GGND09":{
+		"country":["JP"],
+	},
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
@@ -172,6 +175,18 @@ const profiles = {
 		"quote":"Pick a top tier.- Sanford Kelly",
 		"startgg":"e7cbbe40",
 	},
+    "SinJul":{
+        "country":["DE"],
+    },
+    "OCV":{
+        "country":["DE"],
+    },
+    "FlowchartAkuma":{
+        "country":["DE"],
+    },
+    "DrCurien":{
+        "country":["DE"],
+    },
     "Cactu":{
         "country":["GB"],
         "quote":"I'm here to Kara grab & eat pastry but your boulangerie is closed...",
@@ -245,6 +260,21 @@ const profiles = {
     "Jewelbox":{
 		"country":["GB"],
     },
+    "TheRealAkimoto":{
+		"country":["GB"],
+    },
+    "Bootx":{
+		"country":["GB"],
+    },
+    "Yingah":{
+		"country":["GB"],
+    },
+    "GeoDuck":{
+		"country":["GB"],
+    },
+    "JD":{
+		"country":["GB"],
+    },
     "Klaww":{
         "country":["IT"],
         "quote":"Give us the damn mona lisa back",
@@ -290,6 +320,9 @@ const profiles = {
     "YetAnotherAstrid":{
         "country":["US"],
     },
+    "Shyguyking":{
+        "country":["US"],
+    },
     "JustinWong":{
         "country":["US","CA"],
     },
@@ -331,6 +364,9 @@ const profiles = {
     "SeldomSadSam":{
         "country":["NL"],
     },
+    "Verendum":{
+        "country":["NL"],
+    },
     "Mikazuki":{
 		"country":["BG"],
 		"quote":"Red Block Buster Winner",
@@ -352,10 +388,22 @@ const profiles = {
 		"country":["ES"],
 		"startgg":"8ee430cb",
 	},
+    "DAZ":{
+		"country":["ES"],
+	},
     "Dioxin":{
 		"country":["AE"],
 		"startgg":"277e082c",
 	},
+    "VanTDN":{
+		"country":["PL"],
+	},
+    "Shakangel":{
+        "country":["HN"],
+    },
+    "Sagres":{
+        "country":["PT"],
+    },
     "Otana":{
         "country":["FR"],
         "startgg":"6d9282d8",
@@ -522,6 +570,9 @@ const profiles = {
         "startgg":"e69ce980",
     },
     "ChapeauRéglisse":{
+        "country":["FR"],
+    },
+    "Chap":{
         "country":["FR"],
     },
     "SonicSan":{
@@ -990,6 +1041,9 @@ const profiles = {
 		"country":["FR"],
     },
     "JeeLoo":{
+		"country":["FR"],
+    },
+    "Kinwani":{
 		"country":["FR"],
     },
     }
