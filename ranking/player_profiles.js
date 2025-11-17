@@ -95,6 +95,21 @@ const profiles = {
     "GGND09":{
 		"country":["JP"],
 	},
+    "ShiroKuro":{
+		"country":["JP"],
+	},
+    "YSB":{
+		"country":["JP"],
+	},
+    "Yokou":{
+		"country":["JP"],
+	},
+    "Yone":{
+		"country":["JP"],
+	},
+    "KDM":{
+		"country":["JP"],
+	},
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
@@ -186,6 +201,9 @@ const profiles = {
     },
     "DrCurien":{
         "country":["DE"],
+    },
+    "RyanDeopante":{
+        "country":["US","DE"],
     },
     "Cactu":{
         "country":["GB"],
@@ -287,7 +305,7 @@ const profiles = {
 		"country":["IT"],
 		"startgg":"b3a98e1f",
 	},
-    "VeneziaCHUNLI":{
+    "Lun":{
 		"country":["IT"],
 		"quote":"?!.........",
 		"startgg":"80d02eb5",
@@ -297,6 +315,12 @@ const profiles = {
 		"startgg":"95dd7b6e",
 	},
     "Gillstolemyride":{
+		"country":["IT"],
+	},
+    "Valmaniac":{
+		"country":["IT"],
+	},
+    "LoVMG":{
 		"country":["IT"],
 	},
     "Maurya":{
@@ -389,6 +413,9 @@ const profiles = {
 		"startgg":"8ee430cb",
 	},
     "DAZ":{
+		"country":["ES"],
+	},
+    "Moltimor":{
 		"country":["ES"],
 	},
     "Dioxin":{
