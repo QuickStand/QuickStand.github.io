@@ -1,7 +1,7 @@
 const profiles = {
     "Aurèle":{
         "country":["FR","CH"],
-        "quote":"Arrêtez d'essayer de me corrompre.",
+        "quote":"",
         "startgg":"f2a4ac27",
     },
     "PtitLee":{
@@ -203,6 +203,7 @@ const profiles = {
         "country":["DE"],
     },
     "RyanDeopante":{
+        "quote":"Hello. My name is Inigo Montoya. You killed my father. Prepare to die.",
         "country":["US","DE"],
     },
     "Cactu":{
@@ -302,6 +303,7 @@ const profiles = {
         "country":["IT"],
     },
     "Jaxsaon":{
+        "quote":"Cehsso!",
 		"country":["IT"],
 		"startgg":"b3a98e1f",
 	},
@@ -318,9 +320,11 @@ const profiles = {
 		"country":["IT"],
 	},
     "Valmaniac":{
+        "quote":"benvenuto nella juuuuungla",
 		"country":["IT"],
 	},
     "LoVMG":{
+        "quote":"Minchia rossa",
 		"country":["IT"],
 	},
     "Maurya":{
@@ -464,7 +468,7 @@ const profiles = {
     },
     "Nikola":{
         "country":["FR"],
-        "quote":"Хајде да се боримо као џентлмени!",
+        "quote":"Les loups dansent avec les papillons",
 		"startgg":"35fa15c9",
     },
     "Farouk":{
@@ -498,6 +502,7 @@ const profiles = {
 		"startgg":"52c63832",
     },
     "Coccis":{
+        "quote":"Je suis pas un mec du counterpick !",
         "country":["FR"],
         "startgg":"fc809a27",
     },
@@ -515,7 +520,7 @@ const profiles = {
     },
     "Odasan":{
         "country":["FR"],
-        "quote":"Left ? Right ? Not my problem.",
+        "quote":"ZZZzzz...",
 		"startgg":"2a33c77b",
     },
     "AlabhamaMan":{
@@ -554,6 +559,7 @@ const profiles = {
         "country":["FR"],
     },
     "Zyul":{
+        "quote":"C'est pas l'Homme qui fait le choix, c'est le choix qui fait l'Homme.",
         "country":["FR"],
         "startgg":"0ce41f54",
     },
@@ -879,6 +885,7 @@ const profiles = {
         "country":["FR"],
     },
     "Fryne":{
+        "quote":"Je regarde pas l'écran",
 		"country":["FR"],
 		"startgg":"9de7a20a",
 	},
@@ -896,6 +903,7 @@ const profiles = {
 		"startgg":"6f8d8f21",
 	},
     "Rockar":{
+        "quote":"OUH OUH AH AH AH OUH OUH AH OUH AH OUH AH OUH AH OUH",
 		"country":["FR"],
 		"startgg":"eceac4e4",
 	},
@@ -910,7 +918,7 @@ const profiles = {
 	},
     "Lana":{
 		"country":["FR"],
-		"quote":"Being serious is a bad habit!",
+		"quote":"claquette chaussette",
 		"startgg":"443ddeae",
 	},
     "VERi":{
@@ -1002,6 +1010,7 @@ const profiles = {
 		"country":["FR"],
     },
     "Bonnet":{
+        "quote":"Adepte du Dudley zoning",
 		"country":["FR"],
     },
     "Jujumag2x":{
@@ -1041,6 +1050,7 @@ const profiles = {
 		"country":["FR"],
     },
     "Razielle":{
+        "quote":"L'école du kimono jaune ! (Oui je sais c'est un gi)",
 		"country":["FR"],
     },
     "Makyutan":{
@@ -1056,6 +1066,7 @@ const profiles = {
 		"country":["FR"],
     },
     "Ibuprofene":{
+        "quote":"Ici pour vous soigner.",
 		"country":["FR"],
     },
     "Brown":{
