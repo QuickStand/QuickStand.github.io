@@ -10,7 +10,7 @@ const evo25 = {
     "type":"minor",
     "year":"2025",
     "month":"October",
-    "note":"In the bracket, TodoR4 is ElDready.",
+    "note":"In the bracket, Kinwani is Sikaryu.",
     "results":
     {
         "Otana":"1",
@@ -27,7 +27,7 @@ const evo25 = {
         "Shakangel":"9",
         "Ninjardin":"13",
         "Sagres":"13",
-        "Kinwani":"13",
+        "Sikaryu":"13",
         "Shyguyking":"13",
         "Yingah":"17",
         "Vikage":"17",
