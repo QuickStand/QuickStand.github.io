@@ -1,6 +1,6 @@
 const profiles = {
     "Aurèle":{
-        "country":["FR","CH"],
+        "country":["FR"],
         "quote":"",
         "startgg":"f2a4ac27",
     },
@@ -1082,6 +1082,24 @@ const profiles = {
 		"country":["FR"],
     },
     "Kinwani":{
+		"country":["FR"],
+    },
+    "GrosG":{
+		"country":["FR"],
+    },
+    "Navylus":{
+		"country":["FR"],
+    },
+    "CheeseCake":{
+		"country":["FR"],
+    },
+    "Dushni":{
+		"country":["FR"],
+    },
+    "Wolfgang":{
+		"country":["FR"],
+    },
+    "MPRR":{
 		"country":["FR"],
     },
     }
