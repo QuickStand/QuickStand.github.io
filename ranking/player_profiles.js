@@ -71,45 +71,51 @@ const profiles = {
         "country":["JP"]
     },
     "Kuni":{
-		"country":["JP"],
-	},
-	"Yomoda":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
+    "Yomoda":{
+	"country":["JP"],
+    },
     "Taihei":{
-		"country":["JP"],
-		"quote":"Next Week!",
-	},
+	"country":["JP"],
+	"quote":"Next Week!",
+    },
     "PierrotLucifer":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "Sugiyama":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "Mimora":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "TM":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "GGND09":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "ShiroKuro":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "YSB":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "Yokou":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "Yone":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
     "KDM":{
-		"country":["JP"],
-	},
+	"country":["JP"],
+    },
+    "MichaelTan":{
+	"country":["JP"],
+    },
+    "Ushi!?":{
+	"country":["JP"],
+    },
     "ChiRithy": {
         "country":["CA"],
         "startgg":"3730695a",
@@ -126,37 +132,37 @@ const profiles = {
     },
     "Jonas":{
         "country":["CA"],
-		"quote":"A la recherche du respect!!!",
-		"startgg":"0db32e6f",
-	},
+	"quote":"A la recherche du respect!!!",
+	"startgg":"0db32e6f",
+    },
     "Makaveli": {
         "country":["CH"],
         "quote":"Watches, banks, cheese, chocolate, and 1 Gouki.",
-		"startgg":"bb0896be",
+	"startgg":"bb0896be",
     },
     "Captain Honest":{
-		"country":["CH"],
-		"quote":"Il n'y a pas le feu au lac ",
-		"startgg":"9733c30a",
-	},
+	"country":["CH"],
+	"quote":"Il n'y a pas le feu au lac ",
+	"startgg":"9733c30a",
+    },
     "Ghaust":{
-		"country":["CH"],
-		"quote":"Comment on joue arcade 😂",
-		"startgg":"70c81ae8",
-	},
+	"country":["CH"],
+	"quote":"Comment on joue arcade 😂",
+	"startgg":"70c81ae8",
+    },
     "Calimero4055":{
-		"country":["CH"],
+	"country":["CH"],
     },
     "Motivated!":{
-		"country":["CH"],
+	"country":["CH"],
     },
     "Bowli":{
-		"country":["CH"],
+	"country":["CH"],
     },
     "Z3rog":{
         "country":["SE","DE"],
         "quote":"知己知彼 百战不殆",
-		"startgg":"db0c5fbe",
+	"startgg":"db0c5fbe",
     },
     "P-Drum":{
         "country":["SE","DE"],
@@ -164,7 +170,7 @@ const profiles = {
     "Fjaza":{
         "country":["SE"],
         "quote":"Let Me Denjin Your Life",
-		"startgg":"b647a7df",
+	"startgg":"b647a7df",
     },
     "TheArpeggiator":{
         "country":["SE"],
@@ -175,21 +181,21 @@ const profiles = {
     "RC":{
         "country":["SE"],
         "quote":"Jag tror på köttets lust och själens obotliga ensamhet",
-		"startgg":"08746471",
+	"startgg":"08746471",
     },
     "Cyrox":{
         "country":["SE"],
     },
     "Studs":{
-		"country":["SE"],
-		"quote":"You play to win the game.",
-		"startgg":"115488eb",
-	},
+	"country":["SE"],
+	"quote":"You play to win the game.",
+	"startgg":"115488eb",
+    },
     "Oslo":{
-		"country":["SE"],
-		"quote":"Pick a top tier.- Sanford Kelly",
-		"startgg":"e7cbbe40",
-	},
+	"country":["SE"],
+	"quote":"Pick a top tier.- Sanford Kelly",
+	"startgg":"e7cbbe40",
+    },
     "SinJul":{
         "country":["DE"],
     },
@@ -209,22 +215,22 @@ const profiles = {
     "Cactu":{
         "country":["GB"],
         "quote":"I'm here to Kara grab & eat pastry but your boulangerie is closed...",
-		"startgg":"5bc752d7",
+	"startgg":"5bc752d7",
     },
     "cosmonaut":{
-		"country":["GB"],
-		"quote":"I'm long and strong! To challenge me would be so wrong!",
-		"startgg":"e9b5d3fa",
-	},
+	"country":["GB"],
+	"quote":"I'm long and strong! To challenge me would be so wrong!",
+	"startgg":"e9b5d3fa",
+    },
     "3J":{
         "country":["GB"],
         "quote":"Hayate, tsurugi, orochi, fukiage, karakusa; these are my weapons that will seal your fate! ",
-		"startgg":"ce79f544",
+	"startgg":"ce79f544",
     },
     "Azz":{
         "country":["GB"],
         "quote":"Lunch break, special herbs, fries and a sammich. Unleashed on the city, maximize damage",
-		"startgg":"acd6b871",
+	"startgg":"acd6b871",
     },
     "Farhann":{
         "country":["GB"],
@@ -232,7 +238,7 @@ const profiles = {
     "ShinGeorge":{
         "country":["GB"],
         "quote":"I have no idea what I'm doing",
-		"startgg":"ee7c8cf6",
+	"startgg":"ee7c8cf6",
     },
     "Scotty2salty":{
         "country":["GB"],
@@ -256,77 +262,77 @@ const profiles = {
         "country":["GB"],
     },
     "VileIsland":{
-		"country":["GB"],
-		"quote":"LIVIN' LA VIDA LOW TIER!",
-		"startgg":"3113241e",
-	},
+	"country":["GB"],
+	"quote":"LIVIN' LA VIDA LOW TIER!",
+	"startgg":"3113241e",
+    },
     "Jazzerino":{
-		"country":["GB"],
-		"quote":"Dont get gripsed",
-		"startgg":"918090b6",
-	},
+	"country":["GB"],
+	"quote":"Dont get gripsed",
+	"startgg":"918090b6",
+    },
     "Yekrats":{
-		"country":["GB"],
-		"quote":"Whiff Tachi and a Dream..",
-		"startgg":"4c873059",
-	},
+	"country":["GB"],
+	"quote":"Whiff Tachi and a Dream..",
+	"startgg":"4c873059",
+    },
     "Bagel":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "GoldmanJaqs":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "Jewelbox":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "TheRealAkimoto":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "Bootx":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "Yingah":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "GeoDuck":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "JD":{
-		"country":["GB"],
+	"country":["GB"],
     },
     "Klaww":{
         "country":["IT"],
         "quote":"Give us the damn mona lisa back",
-		"startgg":"ca00f5ab",
+	"startgg":"ca00f5ab",
     },
     "Biollo":{
         "country":["IT"],
     },
     "Jaxsaon":{
         "quote":"Cehsso!",
-		"country":["IT"],
-		"startgg":"b3a98e1f",
-	},
+	"country":["IT"],
+	"startgg":"b3a98e1f",
+    },
     "Lun":{
-		"country":["IT"],
-		"quote":"?!.........",
-		"startgg":"80d02eb5",
-	},
+	"country":["IT"],
+	"quote":"?!.........",
+	"startgg":"80d02eb5",
+    },
     "Jck":{
-		"country":["IT"],
-		"startgg":"95dd7b6e",
-	},
+	"country":["IT"],
+	"startgg":"95dd7b6e",
+    },
     "Gillstolemyride":{
-		"country":["IT"],
-	},
+	"country":["IT"],
+    },
     "Valmaniac":{
         "quote":"benvenuto nella juuuuungla",
-		"country":["IT"],
-	},
+	"country":["IT"],
+    },
     "LoVMG":{
         "quote":"Minchia rossa",
-		"country":["IT"],
-	},
+	"country":["IT"],
+    },
     "Maurya":{
         "country":["US"],
     },
@@ -378,17 +384,17 @@ const profiles = {
     "Nindo":{
         "country":["NL"],
         "quote":"Way of the ninja",
-		"startgg":"c25d755c",
+	"startgg":"c25d755c",
     },
     "AQH":{
-		"country":["NL"],
-		"quote":"Ik weet wannneer jouw knop drukt, mattie.",
-		"startgg":"0d95d754",
-	},
+	"country":["NL"],
+	"quote":"Ik weet wannneer jouw knop drukt, mattie.",
+	"startgg":"0d95d754",
+    },
     "Nosferatu":{
-		"country":["NL"],
-		"startgg":"d7ee6529",
-	},
+	"country":["NL"],
+	"startgg":"d7ee6529",
+    },
     "SeldomSadSam":{
         "country":["NL"],
     },
@@ -396,39 +402,42 @@ const profiles = {
         "country":["NL"],
     },
     "Mikazuki":{
-		"country":["BG"],
-		"quote":"Red Block Buster Winner",
-	},
+	"country":["BG"],
+	"quote":"Red Block Buster Winner",
+    },
     "Rokich":{
-		"country":["BG"],
-		"startgg":"f6edc394",
-	},
-	"ShadyAF":{
-		"country":["BG"],
-		"quote":"Lud li si? ",
-		"startgg":"588a82ef",
-	},
+	"country":["BG"],
+	"startgg":"f6edc394",
+    },
+    "ShadyAF":{
+	"country":["BG"],
+	"quote":"Lud li si? ",
+	"startgg":"588a82ef",
+    },
     "Ca1Nne":{
-		"country":["BG"],
-		"startgg":"c474a000",
-	},
+	"country":["BG"],
+	"startgg":"c474a000",
+    },
     "Cartola":{
-		"country":["ES"],
-		"startgg":"8ee430cb",
-	},
+	"country":["ES"],
+	"startgg":"8ee430cb",
+    },
     "DAZ":{
-		"country":["ES"],
-	},
+	"country":["ES"],
+    },
     "Moltimor":{
-		"country":["ES"],
-	},
+	"country":["ES"],
+    },
     "Dioxin":{
-		"country":["AE"],
-		"startgg":"277e082c",
-	},
+	"country":["AE"],
+	"startgg":"277e082c",
+    },
+    "Musa":{
+	"country":["AE"],
+    },
     "VanTDN":{
-		"country":["PL"],
-	},
+	"country":["PL"],
+    },
     "Shakangel":{
         "country":["HN"],
     },
@@ -442,7 +451,7 @@ const profiles = {
     "YaZ":{
         "country":["FR"],
         "quote":"To take or to tech the throw —that is the question.",
-		"startgg":"e2221828",
+	"startgg":"e2221828",
     },
     "Victor":{
         "country":["FR"],
@@ -450,7 +459,7 @@ const profiles = {
     "Mymoza":{
         "country":["FR"],
         "quote":"ça se met bien avec les foreigner",
-		"startgg":"d551c263",
+	"startgg":"d551c263",
     },
     "MLK":{
         "country":["FR"],
@@ -460,7 +469,7 @@ const profiles = {
     "BillyKane":{
         "country":["FR"],
         "quote":"Le Grand Pope",
-		"startgg":"d9ca036e",
+	"startgg":"d9ca036e",
     },
     "Massi":{
         "country":["FR"],
@@ -469,22 +478,22 @@ const profiles = {
     "Nikola":{
         "country":["FR"],
         "quote":"Les loups dansent avec les papillons",
-		"startgg":"35fa15c9",
+	"startgg":"35fa15c9",
     },
     "Farouk":{
         "country":["FR"],
         "quote":"?? ???? ?????",
-		"startgg":"b18ddf58",
+	"startgg":"b18ddf58",
     },
     "Daolicious":{
         "country":["FR"],
         "quote":"Siuuuuuuuuuuu",
-		"startgg":"2fd17b13",
+	"startgg":"2fd17b13",
     },
     "Kiji":{
         "country":["FR"],
         "quote":"لا تكن مجنونا",
-		"startgg":"d524cd97",
+	"startgg":"d524cd97",
     },
     "MounB":{
         "country":["FR","JP"],
@@ -499,7 +508,7 @@ const profiles = {
     "Pingouin":{
         "country":["FR"],
         "quote":"Attention à la mousse!",
-		"startgg":"52c63832",
+	"startgg":"52c63832",
     },
     "Coccis":{
         "quote":"Je suis pas un mec du counterpick !",
@@ -509,7 +518,7 @@ const profiles = {
     "Dobodry":{
         "country":["FR"],
         "quote":"J'aurais dû gagner le contest",
-		"startgg":"d3b2a20f",
+	"startgg":"d3b2a20f",
     },
     "Lynohaz":{
         "country":["FR"],
@@ -521,7 +530,7 @@ const profiles = {
     "Odasan":{
         "country":["FR"],
         "quote":"ZZZzzz...",
-		"startgg":"2a33c77b",
+	"startgg":"2a33c77b",
     },
     "AlabhamaMan":{
         "country":["FR"],
@@ -529,7 +538,7 @@ const profiles = {
     "Boulben":{
         "country":["FR"],
         "quote":"Pose les deux pieds en canard c'est la Chun Li qui redémarre",
-		"startgg":"424fdf39",
+	"startgg":"424fdf39",
     },
     "Sikaryu":{
         "country":["FR"],
@@ -545,12 +554,12 @@ const profiles = {
     "Cardb0xx":{
         "country":["FR"],
         "quote":"\"Ça fait les combos just frame mais ça sait pas hk duck super\" - MLK",
-		"startgg":"f278623b",
+	"startgg":"f278623b",
     },
     "Lithlad":{
         "country":["FR"],
         "quote":"C'est brouillon mais ça passe. ",
-		"startgg":"4e88c9f0",
+	"startgg":"4e88c9f0",
     },
     "Fardec":{
         "country":["FR"],
@@ -566,7 +575,7 @@ const profiles = {
     "MaxLeSac":{
         "country":["FR"],
         "quote":"3.3 mon gars BGOTU",
-		"startgg":"d3addb00",
+	"startgg":"d3addb00",
     },
     "DonYann":{
         "country":["FR"],
@@ -577,7 +586,7 @@ const profiles = {
     "Auber":{
         "country":["FR"],
         "quote":"Tu es fada je crains dégun, je vous prends tous ici, un par un",
-		"startgg":"02be1006",
+	"startgg":"02be1006",
     },
     "Slim":{
         "country":["FR"],
@@ -589,7 +598,7 @@ const profiles = {
     "Arq":{
         "country":["FR"],
         "quote":"au moins j'ai pris un round",
-		"startgg":"1e82331e",
+	"startgg":"1e82331e",
     },
     "Raiser":{
         "country":["FR"],
@@ -620,7 +629,7 @@ const profiles = {
     "MetalBrasier":{
         "country":["FR"],
         "quote":"oraindik bizirik nago, mutil",
-		"startgg":"dde1c25e",
+	"startgg":"dde1c25e",
     },
     "Mwouisman":{
         "country":["FR"],
@@ -649,7 +658,7 @@ const profiles = {
     "Virus":{
         "country":["FR"],
         "quote":"Royal au bar",
-		"startgg":"e8f6f59d",
+	"startgg":"e8f6f59d",
     },
     "Rapeurtugais":{
         "country":["FR"],
@@ -663,12 +672,12 @@ const profiles = {
     "TKO":{
         "country":["FR"],
         "quote":"Stand strong, the show has just begun",
-		"startgg":"6a7fdbe0",
+	"startgg":"6a7fdbe0",
     },
     "Hilight":{
         "country":["FR"],
         "quote":"Les super je les mets où je veux et c'est souvent dans la garde !",
-		"startgg":"64bafa2d",
+	"startgg":"64bafa2d",
     },
     "Nighty":{
         "country":["FR"],
@@ -676,7 +685,7 @@ const profiles = {
     "Raven":{
         "country":["FR"],
         "quote":"Patate !",
-		"startgg":"4d535709",
+	"startgg":"4d535709",
     },
     "Rufio":{
         "country":["FR"],
@@ -693,12 +702,12 @@ const profiles = {
     "RoboQui":{
         "country":["FR"],
         "quote":"Spécialiste du denjin pas assez chargé",
-		"startgg":"0a7460bf",
+	"startgg":"0a7460bf",
     },
     "Keizaal":{
         "country":["FR"],
         "quote":"Gwelloc'h eo lazhañ ar bleiz evit bezañ lazhet gantañ.",
-		"startgg":"6718d136",
+	"startgg":"6718d136",
     },
     "Mitch":{
         "country":["FR"],
@@ -713,7 +722,7 @@ const profiles = {
     "Isimorn":{
         "country":["FR"],
         "quote":"2HP into crush into avant MK",
-		"startgg":"b0bedd01",
+	"startgg":"b0bedd01",
     },
     "Arno1":{
         "country":["FR"],
@@ -739,8 +748,8 @@ const profiles = {
     "Neithan":{
         "country":["FR"],
         "quote":"Ce ryu mon gars",
-		"startgg":"a8791beb",
-
+	"startgg":"a8791beb",
+	
     },
     "MPropre":{
         "country":["FR"],
@@ -764,7 +773,7 @@ const profiles = {
     "Warner":{
         "country":["FR"],
         "quote":"Fiat Punto tkt !",
-		"startgg":"1ee1f22e",
+	"startgg":"1ee1f22e",
     },
     "Keikun":{
         "country":["FR"],
@@ -802,7 +811,7 @@ const profiles = {
     "Gweilo":{
         "country":["FR"],
         "quote":"Protect Trans Lives !",
-		"startgg":"a98bbf13",
+	"startgg":"a98bbf13",
     },
     "Onigiri":{
         "country":["FR"],
@@ -846,7 +855,7 @@ const profiles = {
     "Zarghatt":{
         "country":["FR"],
         "quote":"Me suis trompé de jeu, faites pas attention.",
-		"startgg":"d1590049",
+	"startgg":"d1590049",
     },
     "Morphaman":{
         "country":["FR"],
@@ -886,220 +895,224 @@ const profiles = {
     },
     "Fryne":{
         "quote":"Je regarde pas l'écran",
-		"country":["FR"],
-		"startgg":"9de7a20a",
-	},
+	"country":["FR"],
+	"startgg":"9de7a20a",
+    },
     "Prosk":{
-		"country":["FR"],
-		"quote":"Moi je suis plutôt manette",
-		"startgg":"5dad7292",
-	},
+	"country":["FR"],
+	"quote":"Moi je suis plutôt manette",
+	"startgg":"5dad7292",
+    },
     "SayaZian":{
-		"country":["FR"],
-		"startgg":"565624ed",
-	},
-	"MM2":{
-		"country":["FR"],
-		"startgg":"6f8d8f21",
-	},
+	"country":["FR"],
+	"startgg":"565624ed",
+    },
+    "MM2":{
+	"country":["FR"],
+	"startgg":"6f8d8f21",
+    },
     "Rockar":{
         "quote":"OUH OUH AH AH AH OUH OUH AH OUH AH OUH AH OUH AH OUH",
-		"country":["FR"],
-		"startgg":"eceac4e4",
-	},
-	"Vanille":{
-		"country":["FR"],
-		"quote":"Je fait grincer les chaises et les catapultes.",
-		"startgg":"543291fe",
-	},
+	"country":["FR"],
+	"startgg":"eceac4e4",
+    },
+    "Vanille":{
+	"country":["FR"],
+	"quote":"Je fait grincer les chaises et les catapultes.",
+	"startgg":"543291fe",
+    },
     "NuclearLunch":{
-		"country":["FR"],
-		"startgg":"0b3ed058",
-	},
+	"country":["FR"],
+	"startgg":"0b3ed058",
+    },
     "Lana":{
-		"country":["FR"],
-		"quote":"claquette chaussette",
-		"startgg":"443ddeae",
-	},
+	"country":["FR"],
+	"quote":"claquette chaussette",
+	"startgg":"443ddeae",
+    },
     "VERi":{
-		"country":["FR"],
-		"startgg":"e8eb40ab",
-	},
+	"country":["FR"],
+	"startgg":"e8eb40ab",
+    },
     "Mif":{
-		"country":["FR"],
-		"quote":"PdM",
-		"startgg":"3b2b57aa",
-	},
+	"country":["FR"],
+	"quote":"PdM",
+	"startgg":"3b2b57aa",
+    },
     "Jojomasters":{
-		"country":["FR"],
-		"startgg":"928d2478",
-	},
+	"country":["FR"],
+	"startgg":"928d2478",
+    },
     "K":{
-		"country":["FR"],
-		"quote":"No Kick",
-		"startgg":"13c5325b",
-	},
+	"country":["FR"],
+	"quote":"No Kick",
+	"startgg":"13c5325b",
+    },
     "Foo":{
-		"country":["FR"],
-		"quote":"J'ai jamais gagné un match, excepté une fois au chalet.",
-		"startgg":"ee242d20",
-	},
+	"country":["FR"],
+	"quote":"J'ai jamais gagné un match, excepté une fois au chalet.",
+	"startgg":"ee242d20",
+    },
     "HikenNoGief":{
-		"country":["FR"],
-		"quote":"Un jour un Garou street battle a Lyon",
-		"startgg":"63f43b96",
-	},
+	"country":["FR"],
+	"quote":"Un jour un Garou street battle a Lyon",
+	"startgg":"63f43b96",
+    },
     "TobyAbare":{
-		"country":["FR"],
-		"quote":"C'est comment pour tenraiha avec makoto ?",
-		"startgg":"a6e58561",
-	},
+	"country":["FR"],
+	"quote":"C'est comment pour tenraiha avec makoto ?",
+	"startgg":"a6e58561",
+    },
     "Tentacules":{
-		"country":["FR"],
-		"startgg":"085d80b1",
-	},
+	"country":["FR"],
+	"startgg":"085d80b1",
+    },
     "TheFunkyweapon":{
-		"country":["FR"],
-		"quote":"je cherche mon rythme , mais fini surtout ko ",
-		"startgg":"58f6a701",
-	},
+	"country":["FR"],
+	"quote":"je cherche mon rythme , mais fini surtout ko ",
+	"startgg":"58f6a701",
+    },
     "Quenshi":{
-		"country":["FR"],
-		"quote":"Ewi !",
-		"startgg":"9e6b46b0",
-	},
+	"country":["FR"],
+	"quote":"Ewi !",
+	"startgg":"9e6b46b0",
+    },
     "ManyManon":{
-		"country":["FR"],
-		"startgg":"9801b3bc",
-	},
+	"country":["FR"],
+	"startgg":"9801b3bc",
+    },
     "Bansheebot":{
-		"country":["FR"],
-		"quote":"Zabel c'est un peu comme chun li mais avec un imblocable",
-		"startgg":"f28d98c7",
-	},
+	"country":["FR"],
+	"quote":"Zabel c'est un peu comme chun li mais avec un imblocable",
+	"startgg":"f28d98c7",
+    },
     "Pandougui":{
-		"country":["FR"],
-		"quote":"",
-		"startgg":"81d4d9a5",
-	},
+	"country":["FR"],
+	"quote":"",
+	"startgg":"81d4d9a5",
+    },
     "Zouzou":{
-		"country":["FR"],
-		"quote":"pépère le chaaat",
-	},
+	"country":["FR"],
+	"quote":"pépère le chaaat",
+    },
     "orochikem":{
-		"country":["FR"],
-		"quote":"La justice!!!",
-		"startgg":"4664ba9b",
+	"country":["FR"],
+	"quote":"La justice!!!",
+	"startgg":"4664ba9b",
     },
     "Eldready":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Parpaing":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Jirolondon":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Orochikem":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Shield":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "MagicRider":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Bonnet":{
         "quote":"Adepte du Dudley zoning",
-		"country":["FR"],
+	"country":["FR"],
     },
     "Jujumag2x":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Yamato":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Frionel":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Kareem":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Lap1":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Phalel":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Baraki":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Ninjardin":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Akva":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Artvado":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Vikage":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Binouzator":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Razielle":{
         "quote":"L'école du kimono jaune ! (Oui je sais c'est un gi)",
-		"country":["FR"],
+	"country":["FR"],
     },
     "Makyutan":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "LéoDeParis":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "WonderBoite":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Tuxo":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Ibuprofene":{
         "quote":"Ici pour vous soigner.",
-		"country":["FR"],
+	"country":["FR"],
     },
     "Brown":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "SoMasta":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Likiminaj":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "JeeLoo":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Kinwani":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "GrosG":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Navylus":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "CheeseCake":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Dushni":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "Wolfgang":{
-		"country":["FR"],
+	"country":["FR"],
     },
     "MPRR":{
-		"country":["FR"],
+	"country":["FR"],
     },
-    }
+    "Kujiro":{
+	"country":["FR"],
+    },
+    
+}
