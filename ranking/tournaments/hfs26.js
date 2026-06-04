@@ -53,9 +53,6 @@ const hfs26 = {
         "YaZ":"2",
         "Coccis":"3",
         "Otana":"3",
-        "Niabanh":"3",
-        "Cartola":"3",
-        "Dioxin":"3",
-        "Musa":"3"
+        "Niabanh":"3"
     }
 };
