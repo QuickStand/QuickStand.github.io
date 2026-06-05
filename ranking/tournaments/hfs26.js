@@ -3,6 +3,8 @@ const hfs26 = {
     "shortname":"HFS26",
     "bracket":"https://www.start.gg/tournament/hfs-summer-2026/event/hfs-summer-2026-hado",
     "team_bracket":"https://www.start.gg/tournament/hfs-summer-2026/event/hfs-summer-2026-hado-team",
+    "vod":"https://www.youtube.com/watch?v=7aFwNmSHHzA",
+    "team_vod":"https://www.youtube.com/watch?v=yP6vjs9b_uc",
     "org":["HFS"],
     "org_link":["https://www.hfsplay.fr/"],
     "type":"major",
